@@ -20,6 +20,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    font-family: "RF Dewi Regular", sans-serif;
 }
 
 html, body
@@ -38,6 +40,12 @@ textarea
 {
     outline: none;
     display: block;
+}
+
+a[href^="tel:"],
+a[href^="mailto"]
+{
+    white-space: nowrap;
 }
 
 body .all-wrapper
