@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "RF Dewi Regular";
+    src: url("/fonts/RF-Dewi-Regular.woff2") format("woff2"),
+    url("/fonts/RF-Dewi-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "RF Dewi Semibold";
+    src: url("/fonts/RF-Dewi-Semibold.woff2") format("woff2"),
+    url("/fonts/RF-Dewi-Semibold.woff") format("woff");
+}
+
+:root
+{
+    --gold-color: #A58A57;
+}
+
+*, *::before, *::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+
+input
+{
+    outline: none;
+    border: none;
+}
+
+textarea
+{
+    outline: none;
+    display: block;
+}
+
+body .all-wrapper
+{
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    overflow-x: hidden;
+}
+
+.content-container
+{
+    width: 100%;
+    max-width: calc(1320px + 40px);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@media screen and (max-width: 1400px)
+{
+    .content-container
+    {
+        max-width: calc(1140px + 20px);
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .content-container
+    {
+        max-width: calc(960px + 40px);
+    }
+}
+@media screen and (max-width: 992px)
+{
+    .content-container
+    {
+        max-width: calc(720px + 40px);
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .content-container
+    {
+        max-width: 100%;
+    }
+}
+
+header, main, footer
+{
+    width: 100%;
+}
+
+main
+{
+    flex-grow: 1;
+}
+
+img
+{
+    display: block;
+    object-fit: cover;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* text */
+.heading-1
+ {
+     font-family: "RF Dewi Regular", sans-serif;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 32px;
+     line-height: 42px;
+
+     letter-spacing: 0.02em;
+
+     color: #202020;
+ }
+
+.heading-2
+{
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+
+    letter-spacing: 0.02em;
+
+    color: #202020;
+}
+
+.heading-3
+{
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+
+    letter-spacing: 0.02em;
+
+    color: #202020;
+}
+
+.heading-4
+{
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 28px;
+
+    letter-spacing: 0.02em;
+
+    color: #202020;
+}
+
+.main-text
+{
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+
+    letter-spacing: 0.002em;
+
+    color: #202020;
+}
+
+.description-text
+{
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: 0.02em;
+
+    color: #202020;
+}
+
+/* buttons */
+.mint-btn
+{
+    cursor: pointer;
+
+    outline: none;
+    border: 1px solid var(--gold-color);
+
+    background-color: transparent;
+    display: block;
+    border-radius: 4px;
+
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.01em;
+
+    max-width: max-content;
+
+    color: var(--gold-color);
+}
+
+.mint-btn.full-width
+{
+    width: 100%;
+    max-width: 100%;
+
+    padding: 18px 20px;
+}
+
+.mint-btn.lightning
+{
+    box-shadow: 0 15px 30px -10px rgba(150, 126, 81, 0.35);
+}
+
+/* big btn */
+.mint-btn.big
+{
+    font-size: 16px;
+    line-height: 150%;
+
+    padding: 18px 50px;
+}
+
+.mint-btn.medium
+{
+    font-size: 16px;
+    line-height: 150%;
+
+    padding: 12px 48px;
+}
+
+.mint-btn.mini
+{
+    font-size: 14px;
+    line-height: 150%;
+
+    padding: 9px 24px;
+}
+
+.mint-btn.filled
+{
+    background-color: var(--gold-color);
+    color: #fff;
+}
