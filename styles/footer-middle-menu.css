@@ -1,0 +1,16 @@
+.middle-menu
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7px 109px;
+}
+
+.middle-menu__item
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}

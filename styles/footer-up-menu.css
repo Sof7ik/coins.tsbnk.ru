@@ -1,0 +1,23 @@
+.footer-upper-menu
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-upper-menu .footer-upper-menu__item
+{
+    margin-right: 35px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #fff;
+}
+.footer-upper-menu .footer-upper-menu__item:last-child
+{
+    margin-right: 0;
+}
