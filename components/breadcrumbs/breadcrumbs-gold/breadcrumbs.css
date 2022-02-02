@@ -1,0 +1,76 @@
+.breadcrumbs-wrapper
+{
+    margin-top: 30px;
+    margin-bottom: 42px;
+}
+
+.breadcrumbs-nav
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.breadcrumbs-nav a
+{
+    position: relative;
+
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #11345B;
+
+    margin-right: 11px;
+    margin-bottom: 10px;
+}
+.breadcrumbs-nav a::after
+{
+    pointer-events: none;
+
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: -11px;
+    width: 1px;
+    height: 100%;
+    background-color: #c4c4c4;
+}
+
+.breadcrumbs-wrapper.gold .breadcrumbs-nav a
+{
+    color: var(--gold-color);
+}
+
+.breadcrumbs-wrapper.gold .breadcrumbs-nav a::after
+{
+    background-color: #E9ECEE;
+}
+
+.breadcrumbs-nav a:not(.breadcrumbs-nav a:first-child)
+{
+    margin-left: 11px;
+}
+
+/*.breadcrumbs-nav a:last-child*/
+.breadcrumbs-nav span
+{
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #58666F;
+
+    margin-left: 11px;
+    margin-bottom: 10px;
+}
+.breadcrumbs-wrapper.gold .breadcrumbs-nav span
+{
+    color: #ccc;
+}

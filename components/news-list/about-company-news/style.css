@@ -1,0 +1,41 @@
+.news-list
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.news-item
+{
+    max-width: 420px;
+
+    border: 1px solid var(--gold-color);
+    padding: 21px 47px 26px 27px;
+
+    margin-right: 30px;
+    flex-grow: 1;
+
+    transition: background-color .35s;
+}
+
+.news-list .news-item:last-child
+{
+    margin-right: 0;
+}
+.news-item:hover
+{
+    background-color: var(--gold-color);
+}
+
+.news-item__date
+{
+    display: block;
+    color: #fff;
+    margin-bottom: 11px;
+}
+
+.news-item__announce-text
+{
+    color: #fff;
+}

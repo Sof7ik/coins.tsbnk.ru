@@ -1,0 +1,64 @@
+.addresses-list
+{
+    max-width: 596px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 75px;
+}
+@media screen and (max-width: 1400px) 
+{
+    .addresses-list
+    {
+        max-width: 549px;
+
+        grid-gap: 40px 35px;
+    }
+}
+
+.address-item__value
+{
+    color: #fff;
+
+    margin-bottom: 6px;
+}
+
+.address-item__metro-stations
+{
+    margin-bottom: 6px;
+}
+
+.address-item__metro-station
+{
+    position: relative;
+    display: block;
+    color: #fff;
+
+    padding-left: calc(18px + 8px);
+}
+
+.address-item__metro-station::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 18px;
+
+    background-image: url("/images/icons/metro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.address-item__opened-time
+{
+    color: #FFFFFF;
+}
+
+.address-item__phone
+{
+    color: #fff;
+}
