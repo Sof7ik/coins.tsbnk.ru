@@ -1,3 +1,10 @@
+/* 1400+ - container 1320px */
+/* 1200-1399 - container 1140px */
+/* 992 - 1199 - container 960px */
+/* 768-991+ - container 720px */
+/* 720px- - width 100% */
+
+
 @font-face {
     font-family: "RF Dewi Regular";
     src: url("/fonts/RF-Dewi-Regular.woff2") format("woff2"),
@@ -57,8 +64,11 @@ body .all-wrapper
     align-items: flex-start;
 
     overflow-x: hidden;
+
+    background-color: #F9FBFB;
 }
 
+/* 1320 container */
 .content-container
 {
     width: 100%;
@@ -66,6 +76,7 @@ body .all-wrapper
     margin: 0 auto;
     padding: 0 20px;
 }
+/* 1140 container */
 @media screen and (max-width: 1400px)
 {
     .content-container
@@ -73,6 +84,7 @@ body .all-wrapper
         max-width: calc(1140px + 20px);
     }
 }
+/* 960 container */
 @media screen and (max-width: 1200px)
 {
     .content-container
@@ -80,6 +92,7 @@ body .all-wrapper
         max-width: calc(960px + 40px);
     }
 }
+/* 720 container */
 @media screen and (max-width: 992px)
 {
     .content-container
@@ -103,12 +116,15 @@ header, main, footer
 main
 {
     flex-grow: 1;
+
+    padding-bottom: 120px;
 }
 
 img
 {
     display: block;
     object-fit: cover;
+    user-select: none;
 }
 
 a
@@ -118,17 +134,26 @@ a
 
 /* text */
 .heading-1
- {
-     font-family: "RF Dewi Regular", sans-serif;
-     font-style: normal;
-     font-weight: normal;
-     font-size: 32px;
-     line-height: 42px;
+{
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 42px;
 
-     letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
 
-     color: #202020;
- }
+    color: #202020;
+}
+ /* 720 container */
+@media screen and (max-width: 992px)
+{
+    .heading-1
+    {
+        font-size: 26px;
+        line-height: 35px;
+    }
+}
 
 .heading-2
 {
@@ -201,7 +226,7 @@ a
     cursor: pointer;
 
     outline: none;
-    border: 1px solid var(--gold-color);
+    border: inset 1px solid var(--gold-color);
 
     background-color: transparent;
     display: block;
@@ -212,22 +237,38 @@ a
     font-style: normal;
     letter-spacing: 0.01em;
 
-    max-width: max-content;
+    width: 100%;
+    max-width: 262px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    text-align: center;
 
     color: var(--gold-color);
+
+    box-shadow: 0 15px 30px -10px rgba(150, 126, 81, 0.35);
+}
+
+@media screen and (max-width: 992px)
+{
+    .mint-btn
+    {
+        max-width: 228px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .mint-btn
+    {
+        max-width: 100%;
+    }
 }
 
 .mint-btn.full-width
 {
     width: 100%;
     max-width: 100%;
-
-    padding: 18px 20px;
-}
-
-.mint-btn.lightning
-{
-    box-shadow: 0 15px 30px -10px rgba(150, 126, 81, 0.35);
 }
 
 /* big btn */
@@ -236,15 +277,8 @@ a
     font-size: 16px;
     line-height: 150%;
 
-    padding: 18px 50px;
-}
-
-.mint-btn.medium
-{
-    font-size: 16px;
-    line-height: 150%;
-
-    padding: 12px 48px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 .mint-btn.mini
@@ -252,7 +286,18 @@ a
     font-size: 14px;
     line-height: 150%;
 
-    padding: 9px 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+@media screen and (max-width: 768px) {
+    .mint-btn.mini
+    {
+        font-size: 14px;
+        line-height: 150%;
+
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
 }
 
 .mint-btn.filled
