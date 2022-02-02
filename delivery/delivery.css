@@ -1,0 +1,97 @@
+.delivery-title
+{
+    margin-bottom: 91px;
+}
+
+.delivery-title__title-text
+{
+    color: var(--gold-color);
+    margin-bottom: 30px;
+}
+
+.delivery-title__description
+{
+    color: #fff;
+    max-width: 540px;
+}
+
+.delivery-title__delivery-terms
+{
+    margin-top: 66px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.delivery-terms__delivery-term-item
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.delivery-terms__delivery-term-item img
+{
+    margin-bottom: 25px;
+    max-width: 241px;
+}
+
+.delivery-term-item__description
+{
+    color: #fff;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    text-align: center;
+
+    max-width: 398px;
+}
+
+.moscow-delivery__title
+{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.moscow-delivery__terms
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.moscow-delivery__term
+{
+    flex-grow: 1;
+    max-width: 645px;
+
+    padding: 31px 50px;
+    
+    color: #fff;
+    text-align: center;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.pickup-points
+{
+    margin: 80px 0;
+
+    padding-bottom: 60px;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+.pickup-points .pickup-points__heading
+{
+    color: #fff;
+    margin-bottom: 60px;
+
+    max-width: 680px;
+}
