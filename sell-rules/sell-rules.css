@@ -1,0 +1,40 @@
+.container-758
+{
+    width: 100%;
+    max-width: 758px;
+    margin: 0;
+}
+
+.sell-rules__title
+{
+    color: #00345E;
+
+    margin-bottom: 30px;
+}
+
+/* 1140 */
+@media screen and (max-width: 1400px)
+{
+    .container-758
+    {
+        max-width: 555px;
+    }
+}
+
+/* 960 container */
+@media screen and (max-width: 1200px)
+{
+    .container-758
+    {
+        max-width: 547px;
+    }
+}
+
+/* 720 container */
+@media screen and (max-width: 992px)
+{
+    .container-758
+    {
+        max-width: 473px;
+    }
+}
