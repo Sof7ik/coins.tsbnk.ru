@@ -1,0 +1,247 @@
+body .all-wrapper
+{
+    background-color: #181A1E;
+}
+
+.contacts-top .heading-1
+{
+    margin-bottom: 30px;
+    color: var(--gold-color);
+}
+
+.contacts-3-row
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.contacts-row-item
+{
+    padding: 19px 21px 32px 17px;
+    border: 1px solid var(--gold-color);
+
+    max-width: 420px;
+    flex-grow: 1;
+}
+@media screen and (max-width: 1400px) 
+{
+    .contacts-row-item
+    {
+        max-width: 360px;
+    }
+}
+
+.contacts-row-item__name
+{
+    color: var(--gold-color);
+    margin-bottom: 10px;
+}
+
+.contacts-row-item .main-text
+{
+    color: #fff;
+}
+
+.contacts-row-item__email-tel
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contacts-row-item__email-tel a
+{
+    display: block;
+    margin-bottom: 2px;
+
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+
+    letter-spacing: 0.002em;
+
+    color: #FFFFFF;
+}
+
+.contacts-row-item__email-tel a:last-child
+{
+    margin-bottom: 0;
+}
+
+.contacts-row-item__socials
+{
+    margin-top: 18px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contacts-row-item__socials a
+{
+    display: block;
+
+    margin-right: 8px;
+
+    border-radius: 50%;
+    border: 1px solid #CCCCCC;
+
+    padding: 8px 8px 7px 7px;
+}
+
+.contacts-row-item__socials a img
+{
+    max-width: 20px;
+}
+
+/* ymaps */
+.contacts-ymaps
+{
+    margin-top: 80px;
+
+    min-height: 588px;
+    background-color: #fff;
+}
+
+.addresses
+{
+    margin: 80px 0;
+
+    border-top: 1px solid #B6B6B6;
+    padding-top: 32px;
+
+    padding-bottom: 33px;
+    border-bottom: 1px solid #B6B6B6;
+}
+
+.inner-addresses-wrapper
+{
+    max-width: 1209px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@media screen and (max-width: 1400px) 
+{
+    .inner-addresses-wrapper
+    {
+        max-width: 1077px;
+    }
+}
+
+/* form */
+.ask-question-form-wrapper
+{
+    max-width: 400px;
+}
+
+.success-message
+{
+    opacity: 0;
+
+    border: 1px solid var(--gold-color);
+    border-radius: 5px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 10px 18px 12px 18px;
+
+    transition: opacity .4s;
+}
+.success-message.showed
+{
+    opacity: 1;
+}
+
+.success-message__text
+{
+    color: var(--gold-color);
+    margin-left: 10px;
+}
+
+.ask-question-form-wrapper form
+{
+    margin-top: 24px;
+
+    background-color: #232323;
+
+    border-radius: 15px;
+    border: 1px solid #3A3A3A;
+
+    padding: 15px 34px 24px 18px;
+}
+
+.ask-question__title
+{
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #C4C4C4;
+
+    margin-bottom: 16px;
+}
+
+.ask-question-form-wrapper form input,
+.ask-question-form-wrapper form textarea
+{
+    display: block;
+
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+
+    background: #121212;
+    border: 1px solid #3A3A3A;
+    border-radius: 5px;
+
+    padding: 14px 16px;
+    width: 100%;
+
+    transition: border .3s;
+
+    margin-bottom: 13px;
+
+    color: #fff;
+}
+
+.ask-question-form-wrapper form input:last-child,
+.ask-question-form-wrapper form textarea:last-child
+{
+    margin-bottom: 0;
+}
+
+.ask-question-form-wrapper form input:focus,
+.ask-question-form-wrapper form textarea:focus
+{
+    border: 1px solid var(--gold-color);
+}
+
+.ask-question-form-wrapper form input:placeholder-shown,
+.ask-question-form-wrapper form textarea:placeholder-shown
+{
+    color: #333333;
+}
+
+.ask-question-form-wrapper form textarea
+{
+    resize: vertical;
+    max-height: 250px;
+    min-height: 187px;
+}
