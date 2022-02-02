@@ -1,0 +1,175 @@
+main
+{
+    padding-bottom: 0;
+}
+
+.about-company-text-image
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.building-photo
+{
+    max-width: 533px;
+    max-height: 706px;
+}
+
+.about-company-text
+{
+    margin-left: 30px;
+}
+
+.about-company-text .heading-1
+{
+    margin-top: 64px;
+    margin-bottom: 32px;
+
+    position: relative;
+
+    color: #00345E;
+}
+
+.about-company-text .heading-1::after
+{
+    content: "";
+
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+
+    background-color: #00345E;
+}
+
+.about-company-main-text
+{
+    max-width: 450px;
+}
+
+.about-company-main-text a
+{
+    display: inline-block;
+    max-width: max-content;
+    color: #00345E;
+    border-bottom: 1px solid #00345e;
+}
+
+.about-company-advantages
+{
+    width: 100%;
+    max-width: 1225px;
+    margin: 80px auto 0;
+
+    position: relative;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.about-company-advantages .advantage-item
+{
+    max-width: 555px;
+
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 9px 14px 18px 14px;
+
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+}
+
+.advantage-item-index
+{
+    position: relative;
+
+    width: 41px;
+    height: 41px;
+
+    background-color: #E9ECEE;
+    border-radius: 50%;
+
+    margin-bottom: 28px;
+}
+
+.advantage-item-index .advantage-item-number
+{
+    position: absolute;
+
+    left: 21px;
+    top: 8px;
+}
+
+.dark-bg-wrapper
+{
+    margin-top: -51px;
+    padding-top: 78px;
+    padding-bottom: 120px;
+
+    background-color: #181A1E;
+
+    background-image: url("/images/pixel-bg-about-company.png");
+    background-position: left top;
+    background-size: 10%;
+    background-repeat: repeat;
+}
+
+.clients-up
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1208px;
+
+    margin-bottom: 66px;
+}
+
+.clients-text
+{
+    color: #FFFFFF;
+
+    max-width: 555px;
+}
+
+.clients-down-text
+{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 745px;
+
+    color: #fff;
+}
+
+.clients-down-text a
+{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+
+    transition: color .3s, border .3s;
+}
+
+@media screen and (min-width: 769px)
+{
+    .clients-down-text a:hover
+    {
+        color: var(--gold-color);
+        border-bottom: 1px solid var(--gold-color);
+    }
+}
+
+.last-news, .encyclopedia
+{
+    margin-top: 80px;
+}
+
+.last-news .heading-2, .encyclopedia .heading-2
+{
+    color: var(--gold-color);
+    margin-bottom: 30px;
+}
