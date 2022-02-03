@@ -72,16 +72,15 @@ body .all-wrapper
 .content-container
 {
     width: 100%;
-    max-width: calc(1320px + 40px);
+    max-width: 1320px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 /* 1140 container */
 @media screen and (max-width: 1400px)
 {
     .content-container
     {
-        max-width: calc(1140px + 40px);
+        max-width: 1140px;
     }
 }
 /* 960 container */
@@ -89,7 +88,7 @@ body .all-wrapper
 {
     .content-container
     {
-        max-width: calc(960px + 40px);
+        max-width: 960px;
     }
 }
 /* 720 container */
@@ -97,7 +96,7 @@ body .all-wrapper
 {
     .content-container
     {
-        max-width: calc(720px + 40px);
+        max-width: 720px;
     }
 }
 @media screen and (max-width: 768px)
@@ -105,6 +104,7 @@ body .all-wrapper
     .content-container
     {
         max-width: 100%;
+        padding: 0 20px;
     }
 }
 
