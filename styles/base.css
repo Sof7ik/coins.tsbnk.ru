@@ -81,7 +81,7 @@ body .all-wrapper
 {
     .content-container
     {
-        max-width: calc(1140px + 20px);
+        max-width: calc(1140px + 40px);
     }
 }
 /* 960 container */
