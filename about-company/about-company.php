@@ -1,4 +1,4 @@
-<?php require("header.html"); ?>
+<?php require($_SERVER["DOCUMENT_ROOT"]."/header.html"); ?>
 <link rel="stylesheet" href="/about-company/about-company.css">
 
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/components/breadcrumbs/breadcrumbs-blue/breadcrumbs.html"; ?>
@@ -86,4 +86,4 @@
     <!-- end .content-container -->
 </div>
 
-<?php require "footer.html";?>
+<?php require $_SERVER["DOCUMENT_ROOT"] . "/footer.html";?>
