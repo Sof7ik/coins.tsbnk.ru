@@ -6,6 +6,8 @@
 
 <div class="content-container">
     <section class="about-company-text-image">
+        <h1 class="about-company-text__mobile-header heading-1">О Coins.tsbnk</h1>
+
         <img src="/images/coins-building.jpg" alt="фотография здания ТрансСтройБанк" class="building-photo">
 
         <div class="about-company-text">
@@ -54,16 +56,16 @@
     <div class="content-container">
         <section class="clients-terms">
             <div class="clients-up">
-                <div class="clients-text main-text">
+                <div class="clients-text heading-4">
                     Мы ценим время и сбережения своих клиентов, предлагая лучшие цены на рынке, расширяя ассортиментную
                     линейку и совершенствуя сервис доставки и заказа.<br><br>
                     Постоянным клиентам мы предлагаем гибкую систему скидок.
                 </div>
 
-                <img src="/images/about-company-percent-bag.png" alt="золотая сумка" />
+                <img src="/images/about-company-percent-bag.png" alt="золотая сумка" class="clients-up__image"/>
             </div>
 
-            <div class="clients-down-text main-text">
+            <div class="clients-down-text heading-4">
                 В разделах <a href="#">Энциклопедия</a> и <a href="#">Новости</a> Вас ждут интересные исторические
                 факты,
                 научные статьи, новинки в области рынка драгоценных металлов, различные аналитические материалы и
@@ -71,17 +73,9 @@
                 </p>
         </section>
 
-        <section class="last-news">
-            <h2 class="heading-2">Новости</h2>
+        <? require $_SERVER["DOCUMENT_ROOT"]."/components/news-list/about-company-news/template.php"; ?>
 
-            <? require $_SERVER["DOCUMENT_ROOT"]."/components/news-list/about-company-news/template.php"; ?>
-        </section>
-
-        <section class="encyclopedia">
-            <h2 class="heading-2">Энциклопедия</h2>
-
-            <? require $_SERVER["DOCUMENT_ROOT"]."/components/news-list/about-company-encyclopedia/template.php"; ?>
-        </section>
+        <? require $_SERVER["DOCUMENT_ROOT"]."/components/news-list/about-company-news/template.php"; ?>
     </div>
     <!-- end .content-container -->
 </div>
