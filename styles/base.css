@@ -16,6 +16,11 @@
     src: url("/fonts/RF-Dewi-Semibold.woff2") format("woff2"),
     url("/fonts/RF-Dewi-Semibold.woff") format("woff");
 }
+@font-face {
+    font-family: "RF Dewi Light";
+    src: url("/fonts/RF-Dewi-Light.woff2") format("woff2"),
+    url("/fonts/RF-Dewi-Light.woff") format("woff");
+}
 
 :root
 {
@@ -212,7 +217,7 @@ a
 
 .main-text
 {
-    font-family: "RF Dewi Regular", sans-serif;
+    font-family: "RF Dewi Light", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -233,7 +238,7 @@ a
 
 .description-text
 {
-    font-family: "RF Dewi Regular", sans-serif;
+    font-family: "RF Dewi Light", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
