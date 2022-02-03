@@ -1,0 +1,60 @@
+.app-footer__navigation
+{
+    max-width: 486px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.app-footer__navigation-item img
+{
+    color: #fff;
+}
+
+.app-footer__navigation-item.cart
+{
+    position: relative;
+}
+.app-footer__navigation-item.cart .cart-counter
+{
+    content: "";
+
+    position: absolute;
+    top: -5px;
+    right: -7px;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: #fff;
+    border-radius: 50%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart-counter__value
+{
+    display: block;
+
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+
+    color: #00345E;
+}
+@media screen and (max-width: 576px) 
+{
+    #cart-counter__value
+    {
+        font-size: 8px;
+    }
+}

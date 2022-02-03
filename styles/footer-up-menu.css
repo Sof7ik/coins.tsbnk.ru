@@ -16,8 +16,25 @@
     line-height: 17px;
 
     color: #fff;
+
+    transition: color .3s;
 }
 .footer-upper-menu .footer-upper-menu__item:last-child
 {
     margin-right: 0;
+}
+@media screen and (max-width: 992px)
+{
+    .footer-upper-menu .footer-upper-menu__item
+    {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (min-width: 769px) 
+{
+    .footer-upper-menu .footer-upper-menu__item:hover
+    {
+        color: var(--gold-color);
+    }    
 }

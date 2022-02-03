@@ -4,13 +4,40 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 7px 109px;
 }
+@media screen and (max-width: 1400px) 
+{
+    .middle-menu
+    {
+        grid-gap: 7px 76px;
+    }
+}
+@media screen and (max-width: 1200px) 
+{
+    .middle-menu
+    {
+        grid-gap: 7px 45px;
+        grid-template-columns: repeat(2, minmax(min-content, max-content));
+    }
+}
 
 .middle-menu__item
 {
+    font-family: "RF Dewi Light", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 14px;
     line-height: 17px;
 
     color: #FFFFFF;
+
+    letter-spacing: 0.02em;
+
+    transition: color .3s;
+}
+@media screen and (min-width: 769px) 
+{
+    .middle-menu__item:hover
+    {
+        color: var(--gold-color);
+    }    
 }
