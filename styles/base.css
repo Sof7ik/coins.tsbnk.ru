@@ -167,6 +167,14 @@ a
 
     color: #202020;
 }
+@media screen and (max-width: 992px) 
+{
+    .heading-2
+    {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
 
 .heading-3
 {
@@ -179,6 +187,14 @@ a
     letter-spacing: 0.02em;
 
     color: #202020;
+}
+@media screen and (max-width: 992px) 
+{
+    .heading-3
+    {
+        font-size: 18px;
+        line-height: 30px;
+    }
 }
 
 .heading-4
@@ -205,6 +221,14 @@ a
     letter-spacing: 0.002em;
 
     color: #202020;
+}
+@media screen and (max-width: 992px) 
+{
+    .main-text
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 .description-text
