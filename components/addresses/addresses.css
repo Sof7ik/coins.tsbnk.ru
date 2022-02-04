@@ -1,3 +1,27 @@
+@media screen and (max-width: 680px) 
+{
+    .addresses-button-wrapper
+    {
+        padding-bottom: 29px;
+        position: relative;
+
+        width: 100%;
+    }    
+    .addresses-button-wrapper::after
+    {
+        content: "";
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        
+        width: 100vw;
+        height: 1px;
+        background-color: #4F545D;
+    }
+}
+
 .addresses-list
 {
     max-width: 596px;
@@ -13,6 +37,25 @@
         max-width: 549px;
 
         grid-gap: 40px 35px;
+    }
+}
+@media screen and (max-width: 992px) 
+{
+    .addresses-list
+    {
+        max-width: 257px;
+        grid-template-columns: 1fr;
+
+        grid-gap: 50px 0;
+    }
+}
+@media screen and (max-width: 680px) 
+{
+    .addresses-list
+    {
+        max-width: 100%;
+        width: 100%;
+        grid-gap: 30px 0;
     }
 }
 
@@ -61,4 +104,27 @@
 .address-item__phone
 {
     color: #fff;
+}
+
+#show-more-addresses
+{
+    display: none;
+    margin-top: 50px;
+
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: 0.002em;
+
+    color: var(--gold-color);
+}
+@media screen and (max-width: 992px) 
+{
+    #show-more-addresses
+    {
+        display: block;
+    } 
 }

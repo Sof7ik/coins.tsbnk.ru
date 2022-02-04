@@ -16,6 +16,31 @@ body .all-wrapper
     justify-content: space-between;
     align-items: stretch;
 }
+@media screen and (max-width: 992px) 
+{
+    .contacts-3-row
+    {
+        flex-flow: unset;
+        justify-content: unset;
+        align-items: unset;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px 20px;
+
+        grid-template-areas:  "contacts opened-time"
+                              "optional-item optional-item";                
+    }
+}
+@media screen and (max-width: 567px) 
+{
+    .contacts-3-row
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: unset;
+        grid-gap: 25px 0;
+    }
+}
 
 .contacts-row-item
 {
@@ -32,6 +57,44 @@ body .all-wrapper
         max-width: 360px;
     }
 }
+@media screen and (max-width: 1200px) 
+{
+    .contacts-row-item
+    {
+        max-width: 304px;
+    }
+}
+@media screen and (max-width: 992px) 
+{
+    .contacts-row-item
+    {
+        max-width: 100%;
+
+        padding: 21px 21px 32px 21px;
+    }
+
+    .contacts-row-item.contacts
+    {
+        grid-area: contacts;
+    }
+    .contacts-row-item.opened-time
+    {
+        grid-area: opened-time;
+    }
+    .contacts-row-item.optional
+    {
+        grid-area: optional-item;
+    }
+}
+@media screen and (max-width: 567px) 
+{
+    .contacts-row-item.contacts,
+    .contacts-row-item.opened-time,
+    .contacts-row-item.optional
+    {
+        grid-area: unset;
+    }
+}
 
 .contacts-row-item__name
 {
@@ -42,6 +105,14 @@ body .all-wrapper
 .contacts-row-item .main-text
 {
     color: #fff;
+}
+@media screen and (max-width: 992px) 
+{
+    .contacts-row-item .main-text
+    {
+        font-size: 16px;
+        line-height: 21px;
+    }
 }
 
 .contacts-row-item__email-tel
@@ -57,9 +128,9 @@ body .all-wrapper
     display: block;
     margin-bottom: 2px;
 
-    font-family: "RF Dewi Regular", sans-serif;
+    font-family: "RF Dewi Light", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 16px;
     line-height: 21px;
 
@@ -108,6 +179,21 @@ body .all-wrapper
     min-height: 588px;
     background-color: #fff;
 }
+@media screen and (max-width: 992px) 
+{
+    .contacts-ymaps
+    {
+        min-height: 277px;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 768px) 
+{
+    .contacts-ymaps
+    {
+        min-height: 475px;
+    }
+}
 
 .addresses
 {
@@ -118,6 +204,43 @@ body .all-wrapper
 
     padding-bottom: 33px;
     border-bottom: 1px solid #B6B6B6;
+}
+@media screen and (max-width: 992px) 
+{
+    .addresses
+    {
+        position: relative;
+
+        border-top: none;
+        padding-top: 0;
+        margin: 50px 0;
+        padding-bottom: 30px;
+
+        border-bottom: none;
+    }
+    .addresses::after
+    {
+        content: "";
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        height: 1px;
+        width: 100vw;
+        background-color: #4F545D;
+    }
+}
+@media screen and (max-width: 680px) 
+{
+    .addresses
+    {
+        padding-bottom: 0;
+    }
+    .addresses::after
+    {
+        display: none;
+    }
 }
 
 .inner-addresses-wrapper
@@ -136,11 +259,51 @@ body .all-wrapper
         max-width: 1077px;
     }
 }
+@media screen and (max-width: 680px) 
+{
+    .inner-addresses-wrapper
+    {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
 
 /* form */
 .ask-question-form-wrapper
 {
-    max-width: 400px;
+    max-width: 421px;
+    width: 100%;
+}
+@media screen and (max-width: 1400px) 
+{
+    .ask-question-form-wrapper
+    {
+        max-width: 391px;
+    }  
+}
+@media screen and (max-width: 1200px) 
+{
+    .ask-question-form-wrapper
+    {
+        max-width: 386px;
+    }  
+}
+@media screen and (max-width: 992px) 
+{
+    .ask-question-form-wrapper
+    {
+        max-width: 334px;
+    }  
+}
+@media screen and (max-width: 680px) 
+{
+    .ask-question-form-wrapper
+    {
+        max-width: 100%;
+        margin-top: 59px;
+    }  
 }
 
 .success-message
@@ -163,6 +326,13 @@ body .all-wrapper
 {
     opacity: 1;
 }
+@media screen and (max-width: 992px) 
+{
+    .success-message
+    {
+        display: none;
+    }
+}
 
 .success-message__text
 {
@@ -180,6 +350,27 @@ body .all-wrapper
     border: 1px solid #3A3A3A;
 
     padding: 15px 34px 24px 18px;
+}
+@media screen and (max-width: 1400px) 
+{
+    .ask-question-form-wrapper form
+    {
+        padding: 15px 30px 24px 22px;
+    }
+}
+@media screen and (max-width: 1200px) 
+{
+    .ask-question-form-wrapper form
+    {
+        padding: 15px 25px 24px 22px;
+    }
+}
+@media screen and (max-width: 992px) 
+{
+    .ask-question-form-wrapper form
+    {
+        margin-top: 0;
+    }
 }
 
 .ask-question__title
@@ -200,9 +391,9 @@ body .all-wrapper
 {
     display: block;
 
-    font-family: "RF Dewi Regular", sans-serif;
+    font-family: "RF Dewi Ligth", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
@@ -244,4 +435,18 @@ body .all-wrapper
     resize: vertical;
     max-height: 250px;
     min-height: 187px;
+}
+
+.ask-question-form-wrapper form textarea
+{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) 
+{
+    #submit-question-form
+    {
+        max-width: 100%;
+        width: 100%;
+    }
 }

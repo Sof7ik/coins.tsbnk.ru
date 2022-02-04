@@ -1,5 +1,5 @@
-<?php require("header.html"); ?>
-<link rel="stylesheet" href="/styles/contacts.css">
+<?php require $_SERVER["DOCUMENT_ROOT"]."/header.html"; ?>
+<link rel="stylesheet" href="/contacts/contacts.css">
 
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/components/breadcrumbs/breadcrumbs-gold/breadcrumbs.html"; ?>
 <link rel="stylesheet" href="/components/breadcrumbs/breadcrumbs-gold/breadcrumbs.css">
@@ -63,7 +63,7 @@
 
             <div class="ask-question-form-wrapper">
                 <div class="messages-wrapper">
-                    <div class="success-message">
+                    <div class="success-message showed">
                         <img src="/images/icons/success.svg" alt="иконка с галочкой" class="success-icon">
                         <p class="success-message__text description-text">Спасибо. Ваш вопрос отправлен на модерацию</p>
                     </div>
@@ -96,4 +96,4 @@
     <link rel="stylesheet" href="/includes/delivery-variants/delivery-variants.css">
 </div>
 
-<?php require "footer.html";?>
+<?php require $_SERVER["DOCUMENT_ROOT"]."/footer.html";?>
