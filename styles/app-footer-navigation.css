@@ -13,6 +13,14 @@
 .app-footer__navigation-item img
 {
     color: #fff;
+    max-width: 30px;
+}
+@media screen and (max-width: 370px) 
+{
+    .app-footer__navigation-item img
+    {
+        max-width: 25px;
+    }    
 }
 
 .app-footer__navigation-item.cart
