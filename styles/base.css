@@ -79,18 +79,11 @@ body .all-wrapper
 
     background-color: #F9FBFB;
 }
-/* padding for app-footer */
-@media screen and (max-width: 992px) 
-{
-    body .all-wrapper
-    {
-        padding-bottom: 52px;
-    }    
-}
 
 /* 1320 container */
 .content-container
 {
+    height: 100%;
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
@@ -297,7 +290,6 @@ a
 
     box-shadow: 0 15px 30px -10px rgba(150, 126, 81, 0.35);
 }
-
 @media screen and (max-width: 992px)
 {
     .mint-btn
@@ -305,13 +297,13 @@ a
         max-width: 228px;
     }
 }
-@media screen and (max-width: 768px)
+/* @media screen and (max-width: 768px)
 {
     .mint-btn
     {
         max-width: 100%;
     }
-}
+} */
 
 .mint-btn.full-width
 {
