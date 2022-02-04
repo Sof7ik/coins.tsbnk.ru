@@ -7,6 +7,13 @@ body .all-wrapper
 {
     margin-bottom: 91px;
 }
+@media screen and (max-width: 992px) 
+{
+    .delivery-title
+    {
+        margin-bottom: 50px;
+    }
+}
 
 .delivery-title__title-text
 {
@@ -28,6 +35,24 @@ body .all-wrapper
     flex-flow: row nowrap;
     justify-content: space-between;
 }
+@media screen and (max-width: 1200px)
+{
+    .delivery-title__delivery-terms
+    {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 720px)
+{
+    .delivery-title__delivery-terms
+    {
+        margin-top: 48px;
+
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
 
 .delivery-terms__delivery-term-item
 {
@@ -36,11 +61,67 @@ body .all-wrapper
     justify-content: flex-start;
     align-items: center;
 }
+@media screen and (max-width: 720px)
+{
+    .delivery-terms__delivery-term-item
+    {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        margin-bottom: 30px;
+    }
+    .delivery-title__delivery-terms .delivery-terms__delivery-term-item:last-child
+    {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 350px)
+{
+    .delivery-terms__delivery-term-item
+    {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
 
 .delivery-terms__delivery-term-item img
 {
     margin-bottom: 25px;
+
+    width: 100%;
     max-width: 241px;
+}
+@media screen and (max-width: 1400px) 
+{
+    .delivery-terms__delivery-term-item img
+    {
+        max-width: 220px;
+    }
+}
+@media screen and (max-width: 992px) 
+{
+    .delivery-terms__delivery-term-item img
+    {
+        max-width: 120px;
+    }
+}
+@media screen and (max-width: 720px)
+{
+    .delivery-terms__delivery-term-item img
+    {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 350px)
+{
+    .delivery-terms__delivery-term-item img
+    {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
 }
 
 .delivery-term-item__description
@@ -56,6 +137,51 @@ body .all-wrapper
 
     max-width: 398px;
 }
+@media screen and (max-width: 1400px) 
+{
+    .delivery-term-item__description
+    {
+        max-width: 260px;
+    } 
+}
+@media screen and (max-width: 1200px)
+{
+    .delivery-term-item__description
+    {
+        max-width: 300px;
+    } 
+}
+@media screen and (max-width: 992px) 
+{
+    .delivery-term-item__description
+    {
+        max-width: 227px;
+
+        font-family: "RF Dewi Light", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+
+        text-align: center;
+        letter-spacing: 0.002em;
+    } 
+}
+@media screen and (max-width: 720px)
+{
+    .delivery-term-item__description
+    {
+        max-width: 400px;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 350px)
+{
+    .delivery-term-item__description
+    {
+        text-align: center;
+    }
+}
 
 .moscow-delivery__title
 {
@@ -70,10 +196,23 @@ body .all-wrapper
     justify-content: space-between;
     align-items: stretch;
 }
+@media screen and (max-width: 720px)
+{
+    .moscow-delivery__terms
+    {
+        flex-flow: unset;
+        justify-self: unset;
+        align-items: unset;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px 0;
+    }
+}
 
 .moscow-delivery__term
 {
-    flex-grow: 1;
+    width: 100%;
     max-width: 645px;
 
     padding: 31px 50px;
@@ -83,6 +222,29 @@ body .all-wrapper
 
     border: 1px solid #FFFFFF;
     border-radius: 10px;
+
+    margin-right: 30px;
+}
+@media screen and (max-width: 1200px)
+{
+    .moscow-delivery__term
+    {
+        padding: 31px;
+    }
+}
+@media screen and (max-width: 992px)
+{
+    .moscow-delivery__term
+    {
+        font-family: "RF Dewi Light", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+.moscow-delivery__terms .moscow-delivery__term:last-child
+{
+    margin-right: 0;
 }
 
 .pickup-points
@@ -92,6 +254,47 @@ body .all-wrapper
     padding-bottom: 60px;
     border-bottom: 1px solid #b6b6b6;
 }
+@media screen and (max-width: 1200px)
+{
+    .pickup-points
+    {
+        margin: 50px 0;
+    }
+}
+@media screen and (max-width: 992px)
+{
+    .pickup-points
+    {
+        padding-bottom: 30px;
+        border-bottom: none;
+        position: relative;
+    }
+    .pickup-points::after
+    {
+        content: "";
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+
+        width: 100vw;
+        height: 1px;
+
+        background-color: #4F545D;
+    }
+}
+@media screen and (max-width: 680px)
+{
+    .pickup-points
+    {
+        padding-bottom: 0;
+    }
+    .pickup-points::after
+    {
+        display: none;
+    }
+}
 
 .pickup-points .pickup-points__heading
 {
@@ -99,4 +302,87 @@ body .all-wrapper
     margin-bottom: 60px;
 
     max-width: 680px;
+}
+@media screen and (max-width: 1200px)
+{
+    .pickup-points .pickup-points__heading
+    {
+        margin-bottom: 46px;
+    }
+}
+
+.payment-types
+{
+    margin-top: 80px;
+}
+@media screen and (max-width: 992px)
+{
+    .payment-types
+    {
+        margin-top: 50px;
+    }
+}
+
+.delivery-payment-types
+{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+@media screen and (max-width: 720px)
+{
+    .delivery-payment-types
+    {
+        flex-flow: unset;
+        justify-self: unset;
+        align-items: unset;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px 0;
+    }
+}
+
+.delivery-payment-types__title
+{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.delivery-payment-type
+{
+    width: 100%;
+    margin-right: 30px;
+
+    color: #fff;
+    text-align: center;
+
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+    padding: 31px 50px;
+}
+@media screen and (max-width: 1200px)
+{
+    .delivery-payment-type
+    {
+        padding: 31px;
+    }
+}
+@media screen and (max-width: 992px)
+{
+    .delivery-payment-type
+    {
+        font-family: "RF Dewi Light", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+.delivery-payment-types .delivery-payment-type:last-child
+{
+    margin-right: 0;
 }

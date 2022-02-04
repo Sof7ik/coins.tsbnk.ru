@@ -1,5 +1,5 @@
-<?php require("header.html"); ?>
-<link rel="stylesheet" href="/styles/delivery.css">
+<?php require($_SERVER["DOCUMENT_ROOT"]."/header.html"); ?>
+<link rel="stylesheet" href="/delivery/delivery.css">
 
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/components/breadcrumbs/breadcrumbs-gold/breadcrumbs.html"; ?>
 <link rel="stylesheet" href="/components/breadcrumbs/breadcrumbs-gold/breadcrumbs.css">
@@ -37,15 +37,15 @@
     </section>
 
     <section class="moscow-delivery">
-        <h2 class="heading-1 moscow-delivery__title">Доставка по Москве курьером Спецсвязи</h2>
+        <h2 class="heading-3 moscow-delivery__title">Доставка по Москве курьером Спецсвязи</h2>
 
         <div class="moscow-delivery__terms">
             <div class="moscow-delivery__term heading-4">
-                Банковской картой на сайте после подтверждения заказа менеджером Банка
+                Доставка курьером по Москве осуществляется по будням с 9:00 до 18:00.
             </div>
 
             <div class="moscow-delivery__term heading-4">
-                Наличными при получении заказа в пунктах самовывоза
+                Стоимость доставки (в пределах МКАД и г. Зеленоград) – 500 руб.
             </div>
         </div>
     </section>
@@ -63,6 +63,20 @@
 
     <?require $_SERVER["DOCUMENT_ROOT"]."/includes/delivery-variants/delivery-variants.php"?>
     <link rel="stylesheet" href="/includes/delivery-variants/delivery-variants.css">
+
+    <div class="payment-types">
+        <h2 class="heading-3 delivery-payment-types__title">Способ оплаты</h2>
+
+        <div class="delivery-payment-types">
+            <div class="delivery-payment-type heading-4">
+                Банковской картой на сайте после подтверждения заказа менеджером Банка
+            </div>
+
+            <div class="delivery-payment-type heading-4">
+                Наличными при получении заказа в пунктах самовывоза
+            </div>
+        </div>
+    </div>
 </div>
 
-<?php require "footer.html";?>
+<?php require $_SERVER["DOCUMENT_ROOT"]."/footer.html";?>
