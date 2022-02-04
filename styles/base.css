@@ -79,6 +79,14 @@ body .all-wrapper
 
     background-color: #F9FBFB;
 }
+/* padding for app-footer */
+@media screen and (max-width: 992px) 
+{
+    body .all-wrapper
+    {
+        padding-bottom: 52px;
+    }    
+}
 
 /* 1320 container */
 .content-container
@@ -130,6 +138,13 @@ main
     flex-grow: 1;
 
     padding-bottom: 120px;
+}
+@media screen and (max-width: 992px) 
+{
+    main
+    {
+        padding-bottom: 50px;
+    }    
 }
 
 img
