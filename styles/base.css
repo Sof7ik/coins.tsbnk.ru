@@ -4,7 +4,6 @@
 /* 768-991+ - container 720px */
 /* 720px- - width 100% */
 
-
 @font-face {
     font-family: "RF Dewi Regular";
     src: url("/fonts/RF-Dewi-Regular.woff2") format("woff2"),
@@ -51,6 +50,14 @@ input
 textarea
 {
     outline: none;
+    display: block;
+}
+
+button
+{
+    background-color: transparent;
+    outline: none;
+    border: none;
     display: block;
 }
 
@@ -146,7 +153,7 @@ a
     font-size: 32px;
     line-height: 42px;
 
-    letter-spacing: 0.02em;
+    letter-spacing: 0.002em;
 
     color: #202020;
 }
@@ -168,7 +175,7 @@ a
     font-size: 28px;
     line-height: 36px;
 
-    letter-spacing: 0.02em;
+    letter-spacing: 0.002em;
 
     color: #202020;
 }
@@ -189,7 +196,7 @@ a
     font-size: 24px;
     line-height: 31px;
 
-    letter-spacing: 0.02em;
+    letter-spacing: 0.002em;
 
     color: #202020;
 }
@@ -210,7 +217,7 @@ a
     font-size: 19px;
     line-height: 28px;
 
-    letter-spacing: 0.02em;
+    letter-spacing: 0.002em;
 
     color: #202020;
 }
@@ -240,11 +247,11 @@ a
 {
     font-family: "RF Dewi Light", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 14px;
     line-height: 21px;
 
-    letter-spacing: 0.02em;
+    letter-spacing: 0.002em;
 
     color: #202020;
 }
@@ -254,11 +261,8 @@ a
 {
     cursor: pointer;
 
-    outline: none;
     border: inset 1px solid var(--gold-color);
 
-    background-color: transparent;
-    display: block;
     border-radius: 4px;
 
     font-family: "RF Dewi Semibold", sans-serif;
