@@ -17,6 +17,8 @@
 
 .delivery-variants__variant
 {
+    width: 100%;
+    
     padding: 21px 27px 36px 27px;
 
     border: 1px solid var(--gold-color);
