@@ -535,7 +535,16 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 22px;
+}
+@media screen and (max-width: 345px) 
+{
+    .mobile-footer__payments-and-socials
+    {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
 
 .mobile-footer__payments-list
@@ -545,7 +554,14 @@
     grid-gap: 0 12px;
 
     margin-right: 20px;
-    margin-bottom: 12px;
+}
+@media screen and (max-width: 345px) 
+{
+    .mobile-footer__payments-list
+    {
+        margin-bottom: 12px;
+        margin-right: 0;
+    }
 }
 
 .mobile-footer__socials
