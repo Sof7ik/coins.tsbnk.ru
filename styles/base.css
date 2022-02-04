@@ -69,7 +69,7 @@ a[href^="mailto"]
 
 body .all-wrapper
 {
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
