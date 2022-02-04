@@ -41,6 +41,7 @@
 .last-news__swiper-navingation-buttons .swiper-button-prev,
 .last-news__swiper-navingation-buttons .swiper-button-next
 {
+    z-index: 1;
     -webkit-tap-highlight-color: transparent;
 
     position: static;
