@@ -7,7 +7,7 @@
 {
     #page-footer
     {
-        display: none;
+        padding: 7px 0;
     }
 }
 
@@ -44,6 +44,13 @@
 
         background-color: #797979;
     }  
+}
+@media screen and (max-width: 768px)
+{
+    .up-menu
+    {
+        display: none;
+    }
 }
 
 #page-footer .up-menu a[href^="tel:"]
@@ -95,6 +102,13 @@
         justify-content: flex-start;
         width: 100%;
         margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    #page-footer .middle-info
+    {
+        display: none;
     }
 }
 
@@ -395,6 +409,13 @@
         margin-top: -15px;
     }
 }
+@media screen and (max-width: 768px)
+{
+    .footer__copyright
+    {
+        display: none;
+    }
+}
 
 .company-copyright, .site-copyright
 {
@@ -438,6 +459,139 @@
     {
         color: var(--gold-color)
     }
+}
+
+
+/* mobile footer */
+.mobile-footer
+{
+    display: none;
+}
+
+@media screen and (max-width: 768px)
+{
+    .mobile-footer
+    {
+        display: block;
+    }
+}
+
+.mobile-footer__up
+{
+    position: relative;
+    padding-bottom: 7px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-footer__up::after
+{
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+    width: 100vw;
+    height: 1px;
+    background-color: #797979;
+}
+
+.mobile-footer__up a
+{
+    display: block;
+}
+
+.mobile-footer__up a[href^="tel:"]
+{
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+.mobile-footer__up a[href^="mailto:"]
+{
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
+
+.mobile-footer__payments-and-socials
+{
+    margin-top: 15px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mobile-footer__payments-list
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
+    grid-gap: 0 12px;
+
+    margin-right: 20px;
+    margin-bottom: 12px;
+}
+
+.mobile-footer__socials
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
+    grid-gap: 0 8px;
+}
+
+.mobile-footer__socials a
+{
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 8px 8px 7px 7px;
+}
+
+.mobile-footer__copyright-company,
+.mobile-footer__copyright-site,
+.mobile-footer__copyright-mint,
+.mobile-footer__copyright-mint a
+{
+    font-family: "RF Dewi Light", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #FFFFFF;
+    text-align: center;
+
+    margin-bottom: 6px;
+}
+
+.mobile-footer__copyright-mint,
+.mobile-footer__copyright-mint a
+{
+    margin-bottom: 0;
+}
+
+.mobile-footer__copyright-mint a
+{
+    text-decoration: underline;
 }
 
 /* app-footer */
