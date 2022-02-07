@@ -2,7 +2,6 @@
 <link rel="stylesheet" href="/sell-rules/sell-rules.css">
 
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/components/breadcrumbs/breadcrumbs-blue/breadcrumbs.html"; ?>
-<link rel="stylesheet" href="/components/breadcrumbs/breadcrumbs-blue/breadcrumbs.css">
 
 <div class="content-container">
     <div class="container-758">
