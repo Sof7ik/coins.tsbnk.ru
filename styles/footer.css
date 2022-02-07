@@ -327,7 +327,6 @@
 
 .middle-info__socials-list a
 {
-    display: block;
     margin-right: 8px;
 
     display: flex;
@@ -353,7 +352,7 @@
     width: 20px;
     height: 20px;
     
-    margin-left: -2px;
+    /* margin-left: -2px; */
 }
 
 .middle-info__socials-list a svg path
@@ -613,7 +612,6 @@
     text-align: center;
 
     color: #FFFFFF;
-    text-align: center;
 
     margin-bottom: 6px;
 }
