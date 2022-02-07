@@ -2,7 +2,6 @@
 <link rel="stylesheet" href="/contacts/contacts.css">
 
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/components/breadcrumbs/breadcrumbs-gold/breadcrumbs.html"; ?>
-<link rel="stylesheet" href="/components/breadcrumbs/breadcrumbs-gold/breadcrumbs.css">
 
 <div class="content-container">
     <section class="contacts-top">
