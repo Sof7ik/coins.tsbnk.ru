@@ -1,0 +1,141 @@
+body
+{
+    background-color: #181A1E;
+}
+
+main
+{
+    padding-bottom: 80px;
+}
+@media screen and (max-width: 992px)
+{
+    main
+    {
+        padding-bottom: 50px;
+    }
+}
+
+.encyclopedia__title
+{
+    color: var(--gold-color);
+}
+
+.filter-tabs-wrapper
+{
+    width: 100%;
+
+    position: relative;
+
+    margin-bottom: 51px;
+}
+.filter-tabs-wrapper::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+
+    background-color: rgba(227, 229, 229, 0.5);
+}
+@media screen and (max-width: 1400px)
+{
+    .filter-tabs-wrapper
+    {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .filter-tabs-wrapper
+    {
+        margin-bottom: 43px;
+    }
+}
+@media screen and (max-width: 992px)
+{
+    .filter-tabs-wrapper
+    {
+        margin-bottom: 30px;
+    }
+    .filter-tabs-wrapper::after
+    {
+        background-color: #ccc;
+    }
+}
+
+.filter-tabs
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.filter-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-tabs__button
+{
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #CCCCCC;
+
+    white-space: nowrap;
+
+    position: relative;
+
+    margin-right: 24px;
+
+    padding-bottom: 23px;
+
+    transition: color .35s;
+}
+.filter-tabs__button::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 2;
+
+    transition: background-color .35s;
+}
+.filter-tabs .filter-tabs__button:last-child
+{
+    margin-right: 0;
+}
+@media screen and (max-width: 576px)
+{
+    .filter-tabs__button
+    {
+        margin-right: 20px;
+
+        font-size: 14px;
+        line-height: 17px;
+
+        padding-bottom: 18px;
+    }
+}
+
+.filter-tabs__button.active
+{
+    color: var(--gold-color);
+}
+.filter-tabs__button.active::after
+{
+    background-color: var(--gold-color);
+}

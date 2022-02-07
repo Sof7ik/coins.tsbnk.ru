@@ -1,0 +1,96 @@
+/* pagination */
+.bottom-page-pagination
+{
+    margin-top: 80px;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 24px;
+    position: relative;
+}
+@media screen and (max-width: 992px)
+{
+    .bottom-page-pagination
+    {
+        margin-top: 50px;
+    }
+}
+.bottom-page-pagination::before
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #4F545D;
+}
+
+.pagination-numbers
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0 58px;
+}
+
+.pagination-number
+{
+    display: block;
+    position: relative;
+
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #fff;
+
+    margin-right: 29px;
+}
+.pagination-numbers .pagination-number:last-child
+{
+    margin-right: 0;
+}
+.pagination-number.active
+{
+    color: #99A0A9;
+}
+.pagination-number.active::before
+{
+    content: "";
+
+    position: absolute;
+    width: 30px;
+    height: 2px;
+
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #fff;
+}
+
+.pagination-arrow-wrapper
+{
+    display: block;
+}
+
+.pagination-arrow-wrapper.disabled
+{
+    opacity: 0.5;
+}
+
+.pagination-arrow.left
+{
+    transform: rotate(180deg);
+}
