@@ -44,18 +44,6 @@
     z-index: 1;
     -webkit-tap-highlight-color: transparent;
 
-    position: static;
-    left: unset;
-    top: unset;
-    bottom: unset;
-    right: unset;
-    margin: 0;
-
-    width: unset;
-    height: unset;
-
-    display: block;
-
     padding: 13px 15px 14px 14px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);

@@ -5,12 +5,12 @@
     <div class="last-news__title-wrapper">
         <h2 class="heading-2">Новости</h2>
         <div class="last-news__swiper-navingation-buttons">
-            <div class="swiper-button-prev">
-                <img src="/images/icons/slider-arrow-about-company.svg" alt="икнока стрелки">
-            </div>
-            <div class="swiper-button-next">
-                <img src="/images/icons/slider-arrow-about-company.svg" alt="икнока стрелки">
-            </div>
+            <button class="swiper-button-prev">
+                <img src="/images/icons/slider-arrow-about-company.svg" alt="стрелка влево">
+            </button>
+            <button class="swiper-button-next">
+                <img src="/images/icons/slider-arrow-about-company.svg" alt="стрелка вправо">
+            </button>
         </div>
     </div>
 
