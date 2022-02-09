@@ -1,7 +1,15 @@
 .breadcrumbs-wrapper
 {
     margin-top: 30px;
-    margin-bottom: 42px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 992px) 
+{
+    .breadcrumbs-wrapper
+    {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
 }
 
 .breadcrumbs-nav
