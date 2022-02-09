@@ -1,0 +1,471 @@
+.mobile-linked-coins-slider-navigation-wrapper
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.mobile-linked-coins-slider-navigation
+{
+    display: none;
+
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+@media screen and (max-width: 992px) 
+{
+    .mobile-linked-coins-slider-navigation
+    {
+        display: flex;
+    }
+}
+
+.mobile-linked-coins-slider-navigation .swiper-button-prev,
+.mobile-linked-coins-slider-navigation .swiper-button-next
+{
+    background-color: #ECF0F0;
+    border-radius: 50px;
+
+    padding: 13px 15px 14px 14px;
+
+    transition: opacity .3s;
+}
+.mobile-linked-coins-slider-navigation .swiper-button-next
+{
+    margin-left: 8px;
+    transform: rotate(180deg);
+}
+
+.linked-coins__title
+{
+    color: #00345E;
+}
+@media screen and (max-width: 992px) 
+{
+    .linked-coins__title
+    {
+        /* h2 mobile styles */
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+.linked-coins__slider
+{
+    position: relative;
+}
+
+.linked-coins-slider__navigation
+{
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+} 
+@media screen and (max-width: 992px) 
+{
+    .linked-coins-slider__navigation
+    {
+        display: none;
+    }
+}
+
+.linked-coins-slider__navigation .swiper-button-prev,
+.linked-coins-slider__navigation .swiper-button-next
+{
+    pointer-events: all;
+
+    background-color: rgba(255, 255, 255, 0.66);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px 15px 13px 14px;
+
+    transition: opacity .3s;
+}
+
+.linked-coins-slider__navigation .swiper-button-prev svg path,
+.linked-coins-slider__navigation .swiper-button-next svg path
+{
+    fill: rgba(95, 95, 95);
+    fill-opacity: 0.65;
+}
+
+.linked-coins-slider__navigation .swiper-button-prev.dark-button,
+.linked-coins-slider__navigation .swiper-button-next.dark-button
+{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.linked-coins-slider__navigation .swiper-button-disabled
+{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.linked-coins-slider__navigation .swiper-button-prev svg
+{
+    transform: rotate(180deg);
+    max-width: 14px;
+}
+
+.linked-coins-slider__navigation .swiper-button-prev.dark-button svg path,
+.linked-coins-slider__navigation .swiper-button-next.dark-button svg path
+{
+    fill: #c4c4c4;
+    fill-opacity: 0.7;
+}
+
+
+.linked-coins__coin-item
+{
+    background: #ECF0F0;
+    border-radius: 10px;
+
+    padding: 12px 20px 21px 20px;
+}
+@media screen and (max-width: 567px) 
+{
+    .linked-coins__coin-item
+    {
+        padding: 11px 10px 14px 20px;
+    }
+}
+
+/* dark card */
+.linked-coins__coin-item.dark
+{
+    background-color: #202020;
+}
+
+.top-bar
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-bottom: 23px;
+}
+.top-bar.has-status
+{
+    justify-content: space-between;
+}
+
+.coin-item__statuses
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.coin-item__status
+{
+    margin-right: 5px;
+
+    font-family: "RF Dewi Light", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #00345E;
+
+    padding: 2px 7px 4px 7px;
+
+    border: 1px solid #00345E;
+    border-radius: 4px;
+}
+.coin-item__statuses .coin-item__status:last-child
+{
+    margin-right: 0;
+}
+
+/* dark card */
+.linked-coins__coin-item.dark .coin-item__status
+{
+    color: var(--gold-color);
+    border-color: var(--gold-color);
+}
+
+@media screen and (max-width: 567px) 
+{
+    .mobile-needed-wrapper
+    {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .mobile-preview-wrapper
+    {
+        margin-right: 22px;
+    }
+}
+
+.coin-item__images-preview
+{
+    max-width: max-content;
+    margin: 0 auto;
+
+    margin-bottom: 13px;
+}
+@media screen and (max-width: 567px) 
+{
+    .coin-item__images-preview
+    {
+        margin-bottom: 0;
+    }
+}
+
+.coin-item__images-preview img
+{
+    max-width: 160px;
+}
+@media screen and (max-width: 567px) 
+{
+    .coin-item__images-preview img
+    {
+        max-width: 100px;
+    }
+}
+
+.coin-item__is-in-stock
+{
+    display: none;
+
+    margin-top: 19px;
+
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #777777;
+}
+/* dark card */
+.linked-coins__coin-item.dark .coin-item__is-in-stock
+{
+    color: #ccc;
+}
+@media screen and (max-width: 567px) 
+{
+    .coin-item__is-in-stock
+    {
+        display: block;
+    }   
+}
+
+.coin-item__created-in
+{
+    font-family: "RF Dewi Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 11px;
+
+    color: #777777;
+
+    margin-bottom: 5px;
+}
+
+.coin-item__name
+{
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #202020;
+    
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 567px) 
+{
+    .coin-item__name
+    {
+        margin-bottom: 13px;
+    }
+}
+
+/* dark card */
+.linked-coins__coin-item.dark .coin-item__name
+{
+    color: #fff;
+}
+
+.buy-price
+{
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #777777;
+}
+
+.bottom-bar
+{
+    margin-top: 18px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 567px) 
+{
+    .bottom-bar
+    {
+        margin-top: 13px;
+    }
+}
+
+.sell-price-wrapper
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+@media screen and (max-width: 567px) 
+{
+    .sell-price-wrapper
+    {
+        flex-flow: column-reverse nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.coin-item__sell-price
+{
+    font-family: "RF Dewi Bold", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #00345E;
+
+    white-space: nowrap;
+}
+
+/* dark card */
+.linked-coins__coin-item.dark .coin-item__sell-price
+{
+    color: #fff;
+}
+
+.bottom-bar.no-cost .coin-item__sell-price
+{
+    font-family: "RF Dewi Bold", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #777777;
+
+    white-space: nowrap;
+}
+/* dark card */
+.linked-coins__coin-item.dark .bottom-bar.no-cost .coin-item__sell-price
+{
+    color: #ccc;
+}
+
+@media screen and (max-width: 567px) 
+{
+    .bottom-bar.no-cost .coin-item__sell-price
+    {
+        display: none;
+    }
+}
+
+.coin-item__old-price
+{
+    margin-left: 10px;
+
+    position: relative;
+
+    font-family: "RF Dewi Bold", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #777777;
+
+    white-space: nowrap;
+}
+.coin-item__old-price::before
+{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 9px;
+
+    width: 100%;
+    height: 1px;
+    background-color: #777777;
+}
+
+/* dark card */
+.linked-coins__coin-item.dark .coin-item__old-price
+{
+    color: #ccc;
+}
+.linked-coins__coin-item.dark .coin-item__old-price::before
+{
+    background-color: #ccc;
+}
+@media screen and (max-width: 567px) 
+{
+    .coin-item__old-price
+    {
+        margin-left: 0;
+    }
+}
+
+.add-to-cart
+{
+    background: linear-gradient(97.31deg, #E0C29B 0%, rgba(165, 138, 87, 0) 61.69%), 
+                linear-gradient(85.12deg, #A58A57 0%, #BEA272 97.71%);
+
+    box-shadow: 0px 7px 14px -4px rgba(92, 63, 7, 0.59);
+
+    border-radius: 50%;
+
+    padding: 11px 12px 9px 10px;
+}
+.add-to-cart.notify
+{
+    padding: 10px;
+}
+
+.add-to-cart img
+{
+    max-width: 20px;
+}
