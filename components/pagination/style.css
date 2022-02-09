@@ -40,6 +40,13 @@
 
     margin: 0 58px;
 }
+@media screen and (max-width: 355px)
+{
+    .pagination-numbers
+    {
+        margin: 0 40px;
+    }
+}
 
 .pagination-number
 {
