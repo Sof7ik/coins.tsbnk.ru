@@ -24,6 +24,8 @@
 :root
 {
     --gold-color: #A58A57;
+
+    --dark-bg-page-color: #181A1E;
 }
 
 *, *::before, *::after
