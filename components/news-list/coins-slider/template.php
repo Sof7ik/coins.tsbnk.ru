@@ -14,6 +14,8 @@
                 <img src="/images/icons/slider-arrow-about-company.svg" alt="стрелка вправо">
             </button>
         </div>
+
+        <a href="" class="watch-all">Посмотреть все</a>
     </div>
 
     <div class="swiper linked-coins__slider">
