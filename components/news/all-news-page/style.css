@@ -245,6 +245,18 @@ main
         margin-bottom: 19px;
     }
 }
+@media screen and (max-width: 567px)
+{
+    .preview-image-wrapper,
+    .all-news-items .news-item:first-child .preview-image-wrapper, 
+    .all-news-items .news-item:nth-child(2) .preview-image-wrapper
+    {
+        max-width: 335px;
+        min-height: 189px;
+        max-height: 189px;
+        margin: 0 auto 20px;
+    }
+}
 
 .news-item__preview-picture
 {
