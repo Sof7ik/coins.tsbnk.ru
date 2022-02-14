@@ -26,6 +26,18 @@
 
     background-color: #E3E5E5;
 }
+@media screen and (max-width: 768px) 
+{
+    .section-tabs-sort-wrapper
+    {
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        width: 100%;
+    }
+}
 
 .catalog-sections-tabs
 {
@@ -38,6 +50,8 @@
 
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+
+    max-width: 100%;
 }
 .catalog-sections-tabs::-webkit-scrollbar 
 {
@@ -60,6 +74,8 @@
     line-height: 19px;
 
     color: #58666F;
+
+    white-space: nowrap;
 
     transition: color .3s;
 }
@@ -96,6 +112,16 @@
     align-items: center;
 
     margin-bottom: 9px;
+}
+@media screen and (max-width: 768px) 
+{
+    .catalog-sort
+    {
+        width: 100%;
+        justify-content: space-between;
+
+        margin-bottom: 25px;
+    }
 }
 
 .sort-type-select
@@ -137,10 +163,53 @@
 {
     fill: #58666F;
 }
-
-.reset-filters
+@media screen and (max-width: 992px) 
 {
-    cursor: pointer;
+    .render-options__button
+    {
+        display: none;
+    }   
+}
+
+#open-mobile-filters
+{
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+@media screen and (max-width: 992px) 
+{
+    #open-mobile-filters
+    {
+        display: block;
+    }
+}
+
+#open-mobile-filters svg
+{
+    display: block;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+
+    transition: opacity .3s;
+}
+#open-mobile-filters .open-filters
+{
+    opacity: 1;
+}
+#open-mobile-filters.filters-opened .close-filters
+{
+    opacity: 1;   
+}
+#open-mobile-filters.filters-opened .open-filters
+{
+    opacity: 0;
 }
 
 /* catalog */
@@ -148,10 +217,29 @@
 {
     margin-top: 30px;
 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 307px auto;
+}
+@media screen and (max-width: 1400px) 
+{
+    .catalog-content-wrapper
+    {
+        grid-template-columns: 262px auto;
+    } 
+}
+@media screen and (max-width: 1200px) 
+{
+    .catalog-content-wrapper
+    {
+        grid-template-columns: 304px auto;
+    } 
+}
+@media screen and (max-width: 992px) 
+{
+    .catalog-content-wrapper
+    {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* filters */
@@ -160,6 +248,96 @@
     width: 100%;
     max-width: 307px;
 }
+@media screen and (max-width: 992px) 
+{
+    .catalog-filter
+    {
+        max-width: 100%;
+
+        position: relative;
+
+        margin-bottom: 0;
+        transition: margin .3s;
+    }
+
+    .catalog-filter.opened
+    {
+        margin-bottom: 30px;
+    }
+
+    .catalog-filter::before
+    {
+        content: "";
+        position: absolute;
+
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+
+        width: 100vw;
+        height: 100%;
+
+        z-index: -1;
+
+        background-color: #E9ECEE;
+    }
+
+    .catalog-form-wrapper
+    {
+        overflow: hidden;
+        max-height: 0;
+
+        transition: max-height .5s;
+    }
+
+    .catalog-filter form 
+    {
+        display: grid;
+        grid-template-columns: 213px auto;
+        grid-gap: 0 34px;
+
+        padding: 20px 0 30px;
+    }
+
+    .catalog-filter form .mobile-filter__right
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 568px) 
+{
+    .catalog-filter form 
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) 
+{
+    .catalog-filter form .mobile-filter__right
+    {
+        grid-gap: 15px 10px;
+    }
+}
+@media screen and (max-width: 650px) 
+{
+    .catalog-filter form .mobile-filter__right
+    {
+        grid-template-columns: 1fr;
+        grid-gap: 15px 0;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    .catalog-filter.opened
+    {
+        margin-bottom: 23px;
+    }
+} 
 
 .filter-property-item
 {
@@ -169,6 +347,13 @@
 .filter-property-item.select
 {
     margin-bottom: 11px;
+}
+@media screen and (max-width: 992px) 
+{
+    .filter-property-item.select
+    {
+        margin-bottom: 0px;
+    }
 }
 
 .filter-property__name
@@ -184,8 +369,10 @@
     margin-bottom: 8px;
 }
 
-div.filter-property__value
+.filter-property__value
 {
+    position: relative;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -194,9 +381,21 @@ div.filter-property__value
     margin-bottom: 9px;
 }
 
+.filter-property__values .filter-property__value:last-child
+{
+    margin-bottom: 0;
+}
+
 .filter-property__value-checkbox
 {
-    display: none;
+    /* display: none; */
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 .checkbox-label
@@ -211,17 +410,27 @@ div.filter-property__value
 
     color: #202020;
 
+    position: relative;
+    padding-left: calc(8px + 16px);
+
     transition: color .3s;
 }
-.filter-property__value-checkbox:checked + .custom-checkbox + .checkbox-label
+.filter-property__value-checkbox:checked + .checkbox-label
 {
     color: var(--gold-color);
 }
 
-.custom-checkbox
+.checkbox-label::before
 {
-    width: 14px;
-    height: 14px;
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 16px;
+    height: 16px;
     border: 1px solid #777;
     border-radius: 2px;
 
@@ -231,18 +440,27 @@ div.filter-property__value
     justify-content: center;
     align-items: center;
 
-    margin-right: 8px;
-
     transition: border .3s;
 }
 
-.custom-checkbox:focus
+.filter-property__value-checkbox:focus + .checkbox-label::before
 {
     border: 1px solid var(--gold-color);
 }
-
-.custom-checkbox__inner
+.filter-property__value-checkbox:focus + .checkbox-label
 {
+    color: var(--gold-color);
+}
+
+.checkbox-label::after
+{
+    position: absolute;
+    content: "";
+
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+
     width: 10px;
     height: 10px;
 
@@ -252,11 +470,11 @@ div.filter-property__value
     transition: background-color .3s;
 }
 
-.filter-property__value-checkbox:checked + .custom-checkbox
+.filter-property__value-checkbox:checked + .checkbox-label::before
 {
     border: 1px solid var(--gold-color);
 }
-.filter-property__value-checkbox:checked + .custom-checkbox > .custom-checkbox__inner
+.filter-property__value-checkbox:checked + .checkbox-label::after
 {
     background-color: var(--gold-color);
 }
@@ -295,18 +513,78 @@ div.filter-property__value
     border: 1px solid var(--gold-color);
 }
 
+.reset-filters
+{
+    cursor: pointer;
+}
+@media screen and (max-width: 992px) 
+{
+    .reset-filters
+    {
+        margin-top: 10px;
+    } 
+}
+@media screen and (max-width: 568px) 
+{
+    .reset-filters
+    {
+        margin-top: 5px;
+    }
+}
+
 /* coins */
 .catalog-coins-wrapper
 {
     margin-left: 30px;
 }
+@media screen and (max-width: 992px) 
+{
+    .catalog-coins-wrapper
+    {
+        margin-left: 0;
+    }
+}
 
 .catalog-coins-items
 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 36px 30px;
 }
+.catalog-coins-items.grid
+{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px 30px;
+}
+@media screen and (max-width: 1200px) 
+{
+    .catalog-coins-items.grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px 24px;
+    }
+}
+@media screen and (max-width: 568px) 
+{
+    .catalog-coins-items.grid,
+    .catalog-coins-items.list
+    {
+        grid-template-columns: 1fr;
+        grid-gap: 25px 0;
+    }
+}
+
+/* list coins */
+.catalog-coins-items.list
+{
+    grid-template-columns: 1fr;
+    grid-gap: 32px 0;
+}
+@media screen and (max-width: 1400px)
+{
+    .catalog-coins-items.list
+    {
+        grid-gap: 34px 0;
+    }
+} 
 
 .catalog-coins__coin-item
 {
@@ -323,6 +601,12 @@ div.filter-property__value
     {
         padding: 11px 10px 14px 20px;
     }
+}
+
+/* list coins */
+.catalog-coins-items.list .catalog-coins__coin-item
+{
+    position: relative;
 }
 
 /* dark card */
@@ -380,6 +664,35 @@ div.filter-property__value
 {
     color: var(--gold-color);
     border-color: var(--gold-color);
+}
+
+/* list coins */
+.catalog-coins-items.list .mobile-needed-wrapper
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+/* list coins */
+.catalog-coins-items.list .mobile-preview-wrapper
+{
+    margin-right: 104px;
+}
+@media screen and (max-width: 1400px)
+{
+    .catalog-coins-items.list .mobile-preview-wrapper
+    {
+        margin-right: 83px;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .catalog-coins-items.list .mobile-preview-wrapper
+    {
+        margin-right: 42px;
+    }
 }
 
 @media screen and (max-width: 567px) 
@@ -453,6 +766,32 @@ div.filter-property__value
     }   
 }
 
+/* list coins */
+.catalog-coins-items.list .coin-item__description-wrapper
+{
+    width: 100%;
+    max-width: 487px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@media screen and (max-width: 1400px)
+{
+    .catalog-coins-items.list .coin-item__description-wrapper
+    {
+        max-width: 441px;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .catalog-coins-items.list .coin-item__description-wrapper
+    {
+        max-width: 364px;
+    }
+}
+
 .coin-item__created-in
 {
     font-family: "RF Dewi Regular";
@@ -486,13 +825,27 @@ div.filter-property__value
     }
 }
 
+/* list coins */
+.catalog-coins-items.list .coin-item__name
+{
+    max-width: 277px;
+    margin-bottom: 0;
+}
+@media screen and (max-width: 1200px)
+{
+    .catalog-coins-items.list .coin-item__name
+    {
+        max-width: 188px;
+    }
+}
+
 /* dark card */
 .linked-coins__coin-item.dark .coin-item__name
 {
     color: #fff;
 }
 
-.buy-price
+.buy-price, .list-coin-item__buy-price
 {
     font-family: "RF Dewi Semibold", sans-serif;
     font-style: normal;
@@ -501,6 +854,12 @@ div.filter-property__value
     line-height: 14px;
 
     color: #777777;
+}
+
+/* list coins */
+.catalog-coins-items.list .coin-item__description-text .buy-price
+{
+    display: none;
 }
 
 .bottom-bar
@@ -518,6 +877,17 @@ div.filter-property__value
     {
         margin-top: 13px;
     }
+}
+
+/* list coins */
+.catalog-coins-items.list .bottom-bar
+{
+    margin-top: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .sell-price-wrapper
@@ -609,7 +979,7 @@ div.filter-property__value
     width: 100%;
     height: 1px;
     background-color: #777777;
-}
+} 
 
 /* dark card */
 .linked-coins__coin-item.dark .coin-item__old-price
@@ -628,6 +998,20 @@ div.filter-property__value
     }
 }
 
+/* list coins */
+.list-coin-item__buy-price
+{
+    display: none;
+
+    margin-top: 20px;
+}
+
+/* list coins */
+.catalog-coins-items.list .list-coin-item__buy-price
+{
+    display: block;
+}
+
 .add-to-cart
 {
     background: linear-gradient(97.31deg, #E0C29B 0%, rgba(165, 138, 87, 0) 61.69%), 
@@ -642,6 +1026,14 @@ div.filter-property__value
 .add-to-cart.notify
 {
     padding: 10px;
+}
+
+/* list coins */
+.catalog-coins-items.list .add-to-cart
+{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .add-to-cart img
@@ -679,9 +1071,23 @@ div.filter-property__value
 {
     margin-top: 80px;
 }
+@media screen and (max-width: 992px) 
+{
+    .catalog-desctiption
+    {
+        margin-top: 50px;
+    }
+}
 
 .catalog-description__title
 {
     color: #00345E;
     margin-bottom: 22px;
+}
+@media screen and (max-width: 568px) 
+{
+    .catalog-description__title
+    {
+        margin-bottom: 15px;
+    }
 }
