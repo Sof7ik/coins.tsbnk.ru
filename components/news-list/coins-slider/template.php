@@ -20,7 +20,7 @@
 
     <div class="swiper linked-coins__slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide linked-coins__coin-item">
+            <a class="swiper-slide linked-coins__coin-item" href="catalog/detail/catalog-detail.php">
                 <div class="top-bar has-status">
                     <div class="coin-item__statuses">
                         <p class="coin-item__status sale">Распродажа</p>
@@ -61,9 +61,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="swiper-slide linked-coins__coin-item dark">
+            <a class="swiper-slide linked-coins__coin-item dark" href="catalog/detail/catalog-detail.php">
                 <div class="top-bar has-status">
                     <div class="coin-item__statuses">
                         <p class="coin-item__status sale">Распродажа</p>
@@ -104,9 +104,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="swiper-slide linked-coins__coin-item">
+            <a class="swiper-slide linked-coins__coin-item" href="catalog/detail/catalog-detail.php">
                 <div class="top-bar has-status">
                     <div class="coin-item__statuses">
                         <p class="coin-item__status sale">Распродажа</p>
@@ -144,9 +144,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="swiper-slide linked-coins__coin-item dark">
+            <a class="swiper-slide linked-coins__coin-item dark" href="catalog/detail/catalog-detail.php">
                 <div class="top-bar has-status">
                     <div class="coin-item__statuses">
                         <p class="coin-item__status sale">Распродажа</p>
@@ -184,9 +184,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="swiper-slide linked-coins__coin-item">
+            <a class="swiper-slide linked-coins__coin-item" href="catalog/detail/catalog-detail.php">
                 <div class="top-bar">
                     <button class="add-to-liked">
                         <img src="/images/icons/linked-coins/heart-gold-filled.svg" alt="золотое сердечко залитое">
@@ -220,9 +220,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="swiper-slide linked-coins__coin-item dark">
+            <a class="swiper-slide linked-coins__coin-item dark" href="catalog/detail/catalog-detail.php">
                 <div class="top-bar">
                     <button class="add-to-liked">
                         <img src="/images/icons/linked-coins/heart-gold-filled.svg" alt="золотое сердечко залитое">
@@ -256,9 +256,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="swiper-slide linked-coins__coin-item">
+            <a class="swiper-slide linked-coins__coin-item" href="catalog/detail/catalog-detail.php">
                 <div class="top-bar">
                     <button class="add-to-liked">
                         <img src="/images/icons/linked-coins/heart-gold-filled.svg" alt="золотое сердечко залитое">
@@ -292,9 +292,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="swiper-slide linked-coins__coin-item dark">
+            <a class="swiper-slide linked-coins__coin-item dark" href="catalog/detail/catalog-detail.php">
                 <div class="top-bar">
                     <button class="add-to-liked">
                         <img src="/images/icons/linked-coins/heart-gold-filled.svg" alt="золотое сердечко залитое">
@@ -328,7 +328,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
 
         <div class="linked-coins-slider__navigation">
