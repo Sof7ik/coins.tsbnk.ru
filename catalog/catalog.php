@@ -790,7 +790,7 @@
             <div class="elements-loaded">
                 <p class="elements-count">9 из 125</p>
 
-                <button id="load-more-buttons" class="mint-btn filled mini">Показать еще</button>
+                <button id="load-more-buttons" class="mint-btn blue">Показать еще</button>
             </div>
 
             <!-- тут проблема с перекрытием стилей -->
