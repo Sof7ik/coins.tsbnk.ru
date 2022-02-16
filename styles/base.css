@@ -260,7 +260,7 @@ a
 /* buttons */
 .mint-btn
 {
-    border: inset 1px solid var(--gold-color);
+    border: 1px solid var(--gold-color);
 
     border-radius: 4px;
 
@@ -288,13 +288,6 @@ a
         max-width: 228px;
     }
 }
-/* @media screen and (max-width: 768px)
-{
-    .mint-btn
-    {
-        max-width: 100%;
-    }
-} */
 
 .mint-btn.full-width
 {
@@ -335,4 +328,26 @@ a
 {
     background-color: var(--gold-color);
     color: #fff;
+}
+
+/* blue btns */
+.mint-btn.blue
+{
+    border: 1px solid #00345E;
+    border-radius: 4px;
+
+    font-family: "RF Dewi Light", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #00345E;
+
+    padding: 12px 32px;
+
+    box-shadow: none;
+
+    max-width: max-content;
+    min-width: 160px;
 }
