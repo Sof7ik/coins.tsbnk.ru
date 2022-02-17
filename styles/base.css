@@ -260,6 +260,8 @@ a
 /* buttons */
 .mint-btn
 {
+    display: block;
+
     border: 1px solid var(--gold-color);
 
     border-radius: 4px;
