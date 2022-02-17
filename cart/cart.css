@@ -1,0 +1,401 @@
+.content-container.empty-cart
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    height: 100%;
+}
+
+.cart-content-wrapper
+{
+    max-width: max-content;
+    margin: 0 auto;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px)
+{
+    .cart-avatar
+    {
+        width: 323px;    
+    }
+}
+
+.empty-cart-text
+{
+    margin-top: 35px;
+
+    color: #202020;
+}
+@media screen and (max-width: 1200px)
+{
+    .empty-cart-text
+    {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 992px)
+{
+    .empty-cart-text
+    {
+        margin-top: 40px;
+    }
+}
+
+.cart-catalog-button
+{
+    margin-top: 80px;
+    display: block;
+}
+@media screen and (max-width: 1200px)
+{
+    .cart-catalog-button
+    {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 992px)
+{
+    .cart-catalog-button.mint-btn
+    {
+        margin-top: 30px;
+
+        padding-top: 18px; 
+        padding-bottom: 18px; 
+
+        max-width: 228px;
+    }
+}
+
+/* cart with coins */
+.cart-items-wrapper
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+.coins-list
+{
+    width: 100%;
+}
+
+.coin-item
+{
+    margin-bottom: 51px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    width: 100%;
+}
+.coins-list .coin-item:last-child
+{
+    margin-bottom: 0;
+}
+
+.coin-image__text-wrapper
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.coin-item__image
+{
+    width: 100%;
+    max-width: 103px;
+
+    margin-right: 23px;
+}
+
+.coin-item__name-wrapper
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    max-width: 520px;
+}
+
+.coin-item__name
+{
+    font-family: "RF Dewi Regular", sans-serif;
+    font-weight: normal;
+
+    color: #202020;
+}
+
+.delete-from-cart
+{
+    margin-top: 15px;
+}
+
+.price-quantity-wrapper
+{
+    width: 100%;
+    max-width: 102px;
+}
+
+.coin-item__old-price
+{
+    position: relative;
+
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: 0.002em;
+
+    color: #777777;
+
+    max-width: max-content;
+}
+.coin-item__old-price::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 100%;
+    height: 1px;
+
+    background-color: #777777;
+}
+
+.coin-item__actual-price
+{
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+
+    letter-spacing: 0.002em;
+
+    color: #202020;
+}
+
+.coin-item__old-price,
+.coin-item__actual-price
+{
+    margin-left: 10px;
+}
+
+.coin-item__quantity-wrapper
+{
+    margin-top: 12px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #EBEBEB;
+    border-radius: 3px;
+
+    padding: 3px 2px;
+}
+
+.quantity-change-btn
+{
+    background: #FFFFFF;
+    border-radius: 3px;
+
+    width: 30px;
+    height: 27px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color .3s;
+}
+
+.quantity-change-btn.disabled
+{
+    background-color: transparent;
+}
+
+.quantity-value
+{
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: right;
+
+    color: #000000;
+}
+
+/* cart right side */
+.cart-summary-wrapper
+{
+    margin-left: 30px;
+
+    position: sticky;
+    top: 25px;
+}
+
+.clear-cart
+{
+    margin-left: auto;
+
+    font-family: "RF Dewi Semibold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+
+    color: #777777;
+}
+
+.cart-summary
+{
+    margin-top: 14px;
+
+    background: #E9ECEE;
+    border-radius: 4px;
+
+    padding: 15px 20px 20px 20px;
+}
+
+.cart-summary-text
+{
+    font-family: "RF Dewi Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: 0.002em;
+
+    color: #556871;
+
+    padding-bottom: 13px;
+    border-bottom: 1px solid #9D9D9D;
+
+    margin-bottom: 15px;
+}
+
+.cart-total-price-wrapper
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 27px;
+}
+
+.cart-total-price__name
+{
+    font-family: "RF Dewi Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #000000;
+}
+
+.cart-total-price__value
+{
+    font-family: "RF Dewi Bold", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #000000;
+}
+
+.other-pages-links
+{
+    margin-top: 28px;
+}
+
+.other-page-links__link
+{
+    display: block;
+    position: relative;
+
+    padding-left: calc(25px + 22px);
+
+    margin-bottom: 19px;
+
+    font-family: "RF Dewi Seminold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+
+    color: #777777;
+
+    max-width: max-content;
+
+    transition: color .3s;
+}
+.other-pages-links .other-page-links__link:last-child
+{
+    margin-bottom: 0;
+}
+@media screen and (min-width: 769px)
+{
+    .other-page-links__link:hover
+    {
+        color: var(--gold-color);
+    }    
+}
+
+.other-page-links__link::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 25px;
+    height: 25px;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.delivery-detail::before
+{
+    background-image: url("/images/icons/cart/delivery-detail.svg");
+}
+.payment-detail::before
+{
+    background-image: url("/images/icons/cart/payment-detail.svg");
+}
+.sell-rules::before
+{
+    background-image: url("/images/icons/cart/sell-rules.svg");
+}
