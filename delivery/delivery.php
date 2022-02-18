@@ -5,7 +5,7 @@
 
 <div class="content-container">
     <section class="delivery-title">
-        <h1 class="heading-1 delivery-title__title-text">Доставка и оплата</h1>
+        <h1 class="heading-1 gold delivery-title__title-text">Доставка и оплата</h1>
 
         <p class="delivery-title__description main-text">
             АКБ «Трансстройбанк» осуществляет доставку инвестиционных и памятных, подарочных золотых и серебряных монет по всей России, в том числе и Республике Крым.

@@ -9,6 +9,9 @@
     {
         margin-top: 25px;
         margin-bottom: 30px;
+
+        position: relative;
+        z-index: 1;
     }
 }
 
@@ -24,7 +27,7 @@
 {
     position: relative;
 
-    font-family: "RF Dewi Regular", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -67,7 +70,7 @@
 /*.breadcrumbs-nav a:last-child*/
 .breadcrumbs-nav span
 {
-    font-family: "RF Dewi Regular", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;

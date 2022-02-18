@@ -15,11 +15,6 @@ main
     }
 }
 
-.encyclopedia__title
-{
-    color: var(--gold-color);
-}
-
 .filter-tabs-wrapper
 {
     width: 100%;
@@ -83,7 +78,7 @@ main
 
 .filter-tabs__button
 {
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;

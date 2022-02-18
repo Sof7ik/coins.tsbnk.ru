@@ -1,6 +1,6 @@
 .catalog-section-name
 {
-    color: #00345E;
+
 }
 
 .section-tabs-sort-wrapper
@@ -67,7 +67,7 @@
 
     padding-bottom: 24px;
 
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -402,7 +402,7 @@
 {
     cursor: pointer;
 
-    font-family: "RF Dewi Light", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -489,7 +489,7 @@
 
     padding: 18px 20px;
 
-    font-family: "RF Dewi Light", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 19px;
@@ -641,7 +641,7 @@
 {
     margin-right: 5px;
 
-    font-family: "RF Dewi Light", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -744,7 +744,7 @@
 
     margin-top: 19px;
 
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -794,7 +794,7 @@
 
 .coin-item__created-in
 {
-    font-family: "RF Dewi Regular";
+    font-family: "RF Dewi";
     font-style: normal;
     font-weight: normal;
     font-size: 9px;
@@ -807,7 +807,7 @@
 
 .coin-item__name
 {
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -847,7 +847,7 @@
 
 .buy-price, .list-coin-item__buy-price
 {
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -909,7 +909,7 @@
 
 .coin-item__sell-price
 {
-    font-family: "RF Dewi Bold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -928,7 +928,7 @@
 
 .bottom-bar.no-cost .coin-item__sell-price
 {
-    font-family: "RF Dewi Bold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -958,7 +958,7 @@
 
     position: relative;
 
-    font-family: "RF Dewi Bold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -1055,7 +1055,7 @@
 
 .elements-count
 {
-    font-family: "RF Dewi Bold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;

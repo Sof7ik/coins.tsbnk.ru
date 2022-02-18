@@ -24,7 +24,6 @@ main
 {
     display: none;
 
-    color: #00345E;
     margin-bottom: 30px;
     text-align: left;
 }
@@ -83,7 +82,6 @@ main
 {
     .building-photo
     {
-        margin-right: 0;
         margin: 0 auto 30px;
 
         width: 100%;
@@ -99,8 +97,6 @@ main
     margin-bottom: 32px;
 
     position: relative;
-
-    color: #00345E;
 }
 @media screen and (max-width: 992px) 
 {

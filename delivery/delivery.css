@@ -15,12 +15,6 @@ body
     }
 }
 
-.delivery-title__title-text
-{
-    color: var(--gold-color);
-    margin-bottom: 30px;
-}
-
 .delivery-title__description
 {
     color: #fff;
@@ -157,7 +151,7 @@ body
     {
         max-width: 227px;
 
-        font-family: "RF Dewi Light", sans-serif;
+        font-family: "RF Dewi", sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -236,7 +230,7 @@ body
 {
     .moscow-delivery__term
     {
-        font-family: "RF Dewi Light", sans-serif;
+        font-family: "RF Dewi", sans-serif;
         font-weight: 300;
         font-size: 14px;
         line-height: 21px;
@@ -376,7 +370,7 @@ body
 {
     .delivery-payment-type
     {
-        font-family: "RF Dewi Light", sans-serif;
+        font-family: "RF Dewi", sans-serif;
         font-weight: 300;
         font-size: 14px;
         line-height: 21px;

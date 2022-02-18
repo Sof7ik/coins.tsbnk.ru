@@ -159,7 +159,7 @@
 
     margin-top: 16px;
 
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -197,7 +197,7 @@
 {
     color: #fff;
 
-    font-family: "RF Dewi Light", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -206,7 +206,7 @@
 
 .footer__opened-time__title
 {
-    font-family: "RF Dewi Light", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -224,7 +224,7 @@
 
     color: #fff;
 
-    font-family: "RF Dewi Light", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -248,7 +248,7 @@
 {
     color: #fff;
 
-    font-family: "RF Dewi Light", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -305,7 +305,7 @@
 
 .middle-info__socials-title
 {
-    font-family: "RF Dewi Light", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -375,7 +375,7 @@
 
 .middle-info a[href^="mailto:"]
 {
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -435,7 +435,7 @@
 
 .mint-copyright
 {
-    font-family: "RF Dewi Light", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -446,7 +446,7 @@
 
 .mint-copyright a
 {
-    font-family: "RF Dewi Regular", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-weight: 400;
     color: #fff;
 
@@ -515,7 +515,7 @@
 
 .mobile-footer__up a[href^="tel:"]
 {
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -536,7 +536,7 @@
 
 .mobile-footer__up a[href^="mailto:"]
 {
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -604,7 +604,7 @@
 .mobile-footer__copyright-mint,
 .mobile-footer__copyright-mint a
 {
-    font-family: "RF Dewi Light", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 10px;

@@ -135,7 +135,7 @@
 
 .coin-item__name
 {
-    font-family: "RF Dewi Regular", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-weight: normal;
 
     color: #202020;
@@ -156,7 +156,7 @@
 {
     position: relative;
 
-    font-family: "RF Dewi Regular", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -182,7 +182,7 @@
 
 .coin-item__actual-price
 {
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -236,7 +236,7 @@
 
 .quantity-value
 {
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -260,7 +260,7 @@
 {
     margin-left: auto;
 
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -283,7 +283,7 @@
 
 .cart-summary-text
 {
-    font-family: "RF Dewi Regular";
+    font-family: "RF Dewi";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -311,7 +311,7 @@
 
 .cart-total-price__name
 {
-    font-family: "RF Dewi Regular", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -322,7 +322,7 @@
 
 .cart-total-price__value
 {
-    font-family: "RF Dewi Bold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;

@@ -5,7 +5,7 @@
 
 <div class="content-container">
     <section class="contacts-top">
-        <h1 class="heading-1">Контакты</h1>
+        <h1 class="heading-1 gold contacts__title">Контакты</h1>
 
         <div class="contacts-3-row">
             <div class="contacts-row-item contacts">

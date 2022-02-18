@@ -7,11 +7,14 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="shortcut icon" href="/logo-coins-TSBNK.svg" type="image/svg">
+    <link rel="shortcut icon" href="/logo-coins-TSBNK.svg" type="image/svg+xml">
 
     <title>Coins TSBNK</title>
 
     <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/header.css">
+
+    <script src="/js/header.js" defer></script>
 
     <link rel="stylesheet" href="/styles/footer-up-menu.css">
     <link rel="stylesheet" href="/styles/footer-middle-menu.css">
@@ -26,7 +29,178 @@
 <body>
 
     <!-- <div class="all-wrapper"> -->
+    <div class="header-mrb"></div>
 
-    <header></header>
+    <header id="page-header" class="">
+        <div class="header-up">
+            <div class="content-container">
+                <button class="open-shop-menu mobile-button">
+                    <span class="open-shop-menu__line"></span>
+                    <span class="open-shop-menu__line"></span>
+                    <span class="open-shop-menu__line"></span>
+                </button>
+
+                <img src="/images/logo-coins-TSBNK-dark.svg" alt="Логотип компании" class="header-company-logo">
+<!--                <img src="/images/logo-coins-TSBNK-white.svg" alt="Логотип компании" class="header-company-logo">-->
+
+                <div class="header-right-container">
+                    <div class="shop-burger-menu-wrapper">
+                        <button class="open-shop-menu desktop-button">
+                            <span class="open-shop-menu__line"></span>
+                            <span class="open-shop-menu__line"></span>
+                            <span class="open-shop-menu__line"></span>
+                        </button>
+
+                        <p class="shop-burger-menu__title">Магазин</p>
+                    </div>
+
+                    <nav class="header-navigation sticky-header-menu">
+                        <a href="" class="header-navigation__link">Скидки</a>
+                        <a href="" class="header-navigation__link">Новинки</a>
+                        <a href="" class="header-navigation__link">Золото</a>
+                        <a href="" class="header-navigation__link">Иностранные</a>
+                        <a href="" class="header-navigation__link">Российские</a>
+                        <a href="" class="header-navigation__link">Инвестиционные</a>
+                        <a href="" class="header-navigation__link">Юбилейные</a>
+                    </nav>
+
+                    <div class="header-search-sticky-bg"></div>
+
+                    <div class="header-search-wrapper">
+                        <a href="/all-search-results/?query=" class="search-loupe-wrapper input-left link-to-all-results">
+<!--                            <img src="/images/icons/header/loupe-blue.svg" alt="лупа" class="search-loupe-default">-->
+
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_225_22664)">
+                                    <path d="M19.7293 18.5773L14.0354 12.8899C15.1383 11.5291 15.8024 9.7999 15.8024 7.9166C15.8024 3.55164 12.2467 0 7.87676 0C3.50683 0 -0.0488281 3.55161 -0.0488281 7.91656C-0.0488281 12.2815 3.50687 15.8332 7.8768 15.8332C9.76225 15.8332 11.4934 15.1699 12.8557 14.0682L18.5497 19.7556C18.7124 19.9181 18.9259 19.9998 19.1395 19.9998C19.3531 19.9998 19.5667 19.9181 19.7294 19.7556C20.0556 19.4298 20.0556 18.9031 19.7293 18.5773ZM7.8768 14.1665C4.42623 14.1665 1.61974 11.3632 1.61974 7.91656C1.61974 4.46992 4.42623 1.66662 7.8768 1.66662C11.3274 1.66662 14.1339 4.46992 14.1339 7.91656C14.1339 11.3632 11.3273 14.1665 7.8768 14.1665Z"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_225_22664">
+                                        <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+
+                        <input type="text" id="header-search-input">
+
+                        <div class="input-controls">
+                            <a href="/all-search-results/?query=" class="search-loupe-wrapper input-right link-to-all-results">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_225_22664)">
+                                        <path d="M19.7293 18.5773L14.0354 12.8899C15.1383 11.5291 15.8024 9.7999 15.8024 7.9166C15.8024 3.55164 12.2467 0 7.87676 0C3.50683 0 -0.0488281 3.55161 -0.0488281 7.91656C-0.0488281 12.2815 3.50687 15.8332 7.8768 15.8332C9.76225 15.8332 11.4934 15.1699 12.8557 14.0682L18.5497 19.7556C18.7124 19.9181 18.9259 19.9998 19.1395 19.9998C19.3531 19.9998 19.5667 19.9181 19.7294 19.7556C20.0556 19.4298 20.0556 18.9031 19.7293 18.5773ZM7.8768 14.1665C4.42623 14.1665 1.61974 11.3632 1.61974 7.91656C1.61974 4.46992 4.42623 1.66662 7.8768 1.66662C11.3274 1.66662 14.1339 4.46992 14.1339 7.91656C14.1339 11.3632 11.3273 14.1665 7.8768 14.1665Z"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_225_22664">
+                                            <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+
+                            <button id="close-input">
+                                <svg class="search-close-gold" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 0.824864L13.1751 0L7 6.17514L0.824864 0L0 0.824864L6.17514 7L0 13.1751L0.824864 14L7 7.82486L13.1751 14L14 13.1751L7.82486 7L14 0.824864Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="header-personal-wrapper ">
+                        <button id="open-sticky-search" class="personal-navigation__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_225_22664)">
+                                    <path d="M19.7293 18.5773L14.0354 12.8899C15.1383 11.5291 15.8024 9.7999 15.8024 7.9166C15.8024 3.55164 12.2467 0 7.87676 0C3.50683 0 -0.0488281 3.55161 -0.0488281 7.91656C-0.0488281 12.2815 3.50687 15.8332 7.8768 15.8332C9.76225 15.8332 11.4934 15.1699 12.8557 14.0682L18.5497 19.7556C18.7124 19.9181 18.9259 19.9998 19.1395 19.9998C19.3531 19.9998 19.5667 19.9181 19.7294 19.7556C20.0556 19.4298 20.0556 18.9031 19.7293 18.5773ZM7.8768 14.1665C4.42623 14.1665 1.61974 11.3632 1.61974 7.91656C1.61974 4.46992 4.42623 1.66662 7.8768 1.66662C11.3274 1.66662 14.1339 4.46992 14.1339 7.91656C14.1339 11.3632 11.3273 14.1665 7.8768 14.1665Z"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_225_22664">
+                                        <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+
+                        <a href="" class="personal-navigation__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.99998 18.8873C9.71525 18.8873 9.44075 18.7842 9.22682 18.5968C8.41887 17.8903 7.63991 17.2264 6.95265 16.6408L6.94914 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630339 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563506 3.94485 1.58661 2.83508C2.62191 1.71219 4.0425 1.09375 5.58715 1.09375C6.74163 1.09375 7.7989 1.45874 8.72954 2.1785C9.1992 2.54181 9.62492 2.98645 9.99998 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8058 13.4378 15.066 14.9205 13.0514 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 9.99998 18.8873ZM5.58715 2.26532C4.37362 2.26532 3.25881 2.74963 2.44781 3.62915C1.62475 4.52194 1.17141 5.75607 1.17141 7.10434C1.17141 8.52692 1.70013 9.79919 2.88558 11.2296C4.03136 12.6122 5.73562 14.0645 7.70888 15.7462L7.71254 15.7492C8.40239 16.3371 9.1844 17.0036 9.9983 17.7153C10.8171 17.0023 11.6003 16.3347 12.2915 15.7458C14.2647 14.0642 15.9688 12.6122 17.1145 11.2296C18.2998 9.79919 18.8285 8.52692 18.8285 7.10434C18.8285 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6263 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9871 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03036 9.99998 5.03036C9.73707 5.03036 9.49965 4.89548 9.36476 4.66949C9.10261 4.23004 8.65523 3.60199 8.01283 3.10516C7.29216 2.54791 6.47597 2.26532 5.58715 2.26532Z"/>
+                            </svg>
+                        </a>
+
+                        <a href="" class="personal-navigation__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0711 12.9289C15.9819 11.8398 14.6855 11.0335 13.2711 10.5454C14.786 9.50199 15.7812 7.75578 15.7812 5.78125C15.7812 2.59348 13.1878 0 10 0C6.81223 0 4.21875 2.59348 4.21875 5.78125C4.21875 7.75578 5.21402 9.50199 6.72898 10.5454C5.31453 11.0335 4.01813 11.8398 2.92895 12.9289C1.0402 14.8177 0 17.3289 0 20H1.5625C1.5625 15.3475 5.34754 11.5625 10 11.5625C14.6525 11.5625 18.4375 15.3475 18.4375 20H20C20 17.3289 18.9598 14.8177 17.0711 12.9289ZM10 10C7.67379 10 5.78125 8.1075 5.78125 5.78125C5.78125 3.455 7.67379 1.5625 10 1.5625C12.3262 1.5625 14.2188 3.455 14.2188 5.78125C14.2188 8.1075 12.3262 10 10 10Z"/>
+                            </svg>
+                        </a>
+
+                        <a href="/cart/cart.php" class="personal-navigation__item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.44379 12.9298H6.4447C6.44546 12.9298 6.44623 12.9297 6.44699 12.9297H17.0703C17.3318 12.9297 17.5618 12.7562 17.6337 12.5047L19.9774 4.30161C20.0279 4.12476 19.9925 3.93463 19.8819 3.78784C19.7711 3.64105 19.5979 3.55469 19.4141 3.55469H5.09247L4.67361 1.66977C4.61395 1.40167 4.37622 1.21094 4.10156 1.21094H0.585937C0.262299 1.21094 0 1.47324 0 1.79688C0 2.12051 0.262299 2.38281 0.585937 2.38281H3.63159C3.70575 2.71683 5.63599 11.403 5.74707 11.9028C5.12436 12.1735 4.6875 12.7943 4.6875 13.5156C4.6875 14.4849 5.47607 15.2734 6.44531 15.2734H17.0703C17.3939 15.2734 17.6562 15.0111 17.6562 14.6875C17.6562 14.3639 17.3939 14.1016 17.0703 14.1016H6.44531C6.12228 14.1016 5.85937 13.8387 5.85937 13.5156C5.85937 13.1931 6.12137 12.9306 6.44379 12.9298ZM18.6372 4.72656L16.6283 11.7578H6.91528L5.35278 4.72656H18.6372Z"/>
+                                <path d="M5.85938 17.0312C5.85938 18.0005 6.64795 18.7891 7.61719 18.7891C8.58643 18.7891 9.375 18.0005 9.375 17.0312C9.375 16.062 8.58643 15.2734 7.61719 15.2734C6.64795 15.2734 5.85938 16.062 5.85938 17.0312ZM7.61719 16.4453C7.94022 16.4453 8.20312 16.7082 8.20312 17.0312C8.20312 17.3543 7.94022 17.6172 7.61719 17.6172C7.29416 17.6172 7.03125 17.3543 7.03125 17.0312C7.03125 16.7082 7.29416 16.4453 7.61719 16.4453Z"/>
+                                <path d="M14.1406 17.0312C14.1406 18.0005 14.9292 18.7891 15.8984 18.7891C16.8677 18.7891 17.6562 18.0005 17.6562 17.0312C17.6562 16.062 16.8677 15.2734 15.8984 15.2734C14.9292 15.2734 14.1406 16.062 14.1406 17.0312ZM15.8984 16.4453C16.2215 16.4453 16.4844 16.7082 16.4844 17.0312C16.4844 17.3543 16.2215 17.6172 15.8984 17.6172C15.5754 17.6172 15.3125 17.3543 15.3125 17.0312C15.3125 16.7082 15.5754 16.4453 15.8984 16.4453Z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <a href="tel:8 800 505 04 76">8 800 505 04 76</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="content-container">
+                <div class="header-right-container">
+                    <div class="header-bottom-navigation">
+                        <nav class="header-navigation">
+                            <a href="" class="header-navigation__link">Скидки</a>
+                            <a href="" class="header-navigation__link">Новинки</a>
+                            <a href="" class="header-navigation__link">Золото</a>
+                            <a href="" class="header-navigation__link">Иностранные</a>
+                            <a href="" class="header-navigation__link">Российские</a>
+                            <a href="" class="header-navigation__link">Инвестиционные</a>
+                            <a href="" class="header-navigation__link">Юбилейные</a>
+                        </nav>
+
+                        <a href="tel:+7">8 800 505 04 76</a>
+                    </div>
+
+                    <div class="mobile-catalog-wrapper ">
+                        <button id="open-mobile-catalog" class="">
+                            <span class="open-mobile-catalog__text">Каталог</span>
+
+                            <img src="/images/icons/header/mobile-open-catalog-arrow.svg"
+                                 alt="стрелка влево"
+                                 class="open-mobile-catalog__arrow">
+                        </button>
+
+                        <div class="mobile-catalog-navigation-wrapper hidden">
+                            <nav class="mobile-catalog-navigation">
+                                <a href="/catalog/catalog.php" class="mobile-catalog-navigation__link">Скидки</a>
+                                <a href="/catalog/catalog.php" class="mobile-catalog-navigation__link">Новинки</a>
+                                <a href="/catalog/catalog.php" class="mobile-catalog-navigation__link">Золото</a>
+                                <a href="/catalog/catalog.php" class="mobile-catalog-navigation__link">Иностранные</a>
+                                <a href="/catalog/catalog.php" class="mobile-catalog-navigation__link">Инвестиционные</a>
+                                <a href="/catalog/catalog.php" class="mobile-catalog-navigation__link">Российские</a>
+                                <a href="/catalog/catalog.php" class="mobile-catalog-navigation__link">Юбилейные</a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="shop-menu-wrapper hidden">
+                        <nav class="shop-menu-navigation">
+                            <a href="/about-company/about-company.php"class="shop-menu-navigation__link">О магазине</a>
+                            <a href="/all-news/index.php"class="shop-menu-navigation__link">Новости</a>
+                            <a href="/encyclopedia/encyclopedia.php"class="shop-menu-navigation__link">Энциклопедия</a>
+                            <a href="/all-collections/all-collections.php"class="shop-menu-navigation__link">Коллекции</a>
+                            <a href="/delivery/delivery.php"class="shop-menu-navigation__link">Доставка и оплата</a>
+                            <a href="/sell-rules/sell-rules.php"class="shop-menu-navigation__link">Правила продажи</a>
+                            <a href="/contacts/contacts.php"class="shop-menu-navigation__link">Контакты</a>
+                        </nav>
+
+                        <div class="shop-menu-background"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main>

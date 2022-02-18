@@ -3,12 +3,6 @@ body
     background-color: var(--dark-bg-page-color);
 }
 
-.contacts-top .heading-1
-{
-    margin-bottom: 30px;
-    color: var(--gold-color);
-}
-
 .contacts-3-row
 {
     display: flex;
@@ -128,7 +122,7 @@ body
     display: block;
     margin-bottom: 2px;
 
-    font-family: "RF Dewi Light", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -375,7 +369,7 @@ body
 
 .ask-question__title
 {
-    font-family: "RF Dewi Semibold", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;

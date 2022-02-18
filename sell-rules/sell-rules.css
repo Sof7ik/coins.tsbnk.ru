@@ -5,13 +5,6 @@
     margin: 0;
 }
 
-.sell-rules__title
-{
-    color: #00345E;
-
-    margin-bottom: 30px;
-}
-
 /* 1140 */
 @media screen and (max-width: 1400px)
 {

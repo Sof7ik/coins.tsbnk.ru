@@ -3,7 +3,6 @@
         <style>
             .cls-1{fill:#a58a57;}
             .cls-2{fill:#00345e;}
-            @media(prefers-color-scheme: dark){.cls-2{fill:#fff;}}
         </style>
     </defs>
     <title>Coins TSBNK</title>

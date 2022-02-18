@@ -5,8 +5,6 @@ main
 
 .detail-news__title
 {
-    color: #00345E;
-
     max-width: 871px;
 }
 
@@ -80,7 +78,7 @@ main
 {
     .detail-page__date
     {
-        font-family: "RF Dewi Light", sans-serif;
+        font-family: "RF Dewi", sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;

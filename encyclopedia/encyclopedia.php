@@ -5,7 +5,7 @@
 <? require $_SERVER["DOCUMENT_ROOT"]."/components/breadcrumbs/breadcrumbs-gold/breadcrumbs.html" ?>
 
 <div class="content-container">
-    <h1 class="heading-1 encyclopedia__title">Энциклопедия</h1>
+    <h1 class="heading-1 gold encyclopedia__title">Энциклопедия</h1>
 
     <div class="filter-tabs-wrapper">
         <div class="filter-tabs">
