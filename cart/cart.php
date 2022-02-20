@@ -238,7 +238,7 @@
                         <a 
                             href="/sell-rules/sell-rules.php" 
                             class="other-page-links__link sell-rules">
-                            Правила покупки (продажи)
+                            Правила продажи
                         </a>
                     </div>
                 </div>
