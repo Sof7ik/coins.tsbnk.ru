@@ -1,0 +1,10 @@
+.buyout-coins__title
+{
+    margin-bottom: 30px;
+    color: #00345E;
+}
+
+.swiper-slide buyout-coin-item
+{
+    display: block;
+}

@@ -1,0 +1,162 @@
+.famous-collections
+{
+    margin-top: 80px;
+}
+
+.famous-collections__title-wrapper
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    margin-bottom: 30px;
+}
+
+.collections-list
+{
+    position: relative;
+}
+.collections-list::after
+{
+    content: "";
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+    height: 1px;
+    width: 100vw;
+
+    background-color: #c4c4c4;
+}
+
+.collection-item
+{
+    position: relative;
+    
+    padding: 14px 0;
+}
+/* upper line */
+.collection-item::before,
+/* dark bg */
+.collection-item::after
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100vw;
+}
+
+.collection-item::before
+{
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.collection-item::after
+{
+    height: 100%;
+    background-color: #181A1E;
+
+    opacity: 0;
+    z-index: -1;
+
+    transition: opacity .4s;
+}
+.collection-item:hover::after
+{
+    opacity: 1;
+}
+
+.collection-item__inner-wrapper
+{
+    width: 100%;
+    max-width: 1206px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection-name-type-wrapper
+{
+    flex-grow: 1;
+    max-width: 260px;
+}
+
+.collection__name
+{
+    color: #000;
+    margin-bottom: 8px;
+
+    transition: color .4s;
+}
+
+.collection-item:hover .collection__name
+{
+    color: #fff;
+}
+
+.collection__type
+{
+    color: transparent;
+
+    transition: color .4s;
+}
+.collection-item:hover .collection__type
+{
+    color: #fff;
+}
+
+.collection__preview-images
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.collection__preview-image
+{
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+
+    object-fit: contain;
+
+    margin-right: 17px;
+    border-radius: 50%;
+}
+
+.collection__preview-images .collection__preview-image:last-child
+{
+    margin-right: 0;
+}
+
+.rotating-image-wrapper
+{
+    position: relative;
+}
+.rotating-image-wrapper .rotating-image
+{
+    max-width: 107px;
+}
+.rotating-image-wrapper  .inner-arrow
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/* выкуп монет */
+.buyout-coins
+{
+    margin-top: 80px;
+}
