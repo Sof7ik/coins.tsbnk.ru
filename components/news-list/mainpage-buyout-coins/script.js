@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', e => {
         breakpoints: {
             1200: {
                 spaceBetween: 30,
+                navigation: {
+                    prevEl: ".desktop-buyout-coins-nav-wrapper .swiper-button-prev",
+                    nextEl: ".desktop-buyout-coins-nav-wrapper .swiper-button-next"
+                }
             },
             992: {
                 spaceBetween: 25,
