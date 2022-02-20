@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="/components/">
+<link rel="stylesheet" href="/components/news-list/mainpage-buyout-coins/style.css">
+<script src="/components/news-list/mainpage-buyout-coins/script.js" defer></script>
 
 <section class="buyout-coins">
     <div class="buyout-coins__title-navigation-wrapper">
@@ -19,11 +20,11 @@
         <div class="swiper-wrapper">
             <a class="swiper-slide buyout-coin-item" href="/catalog/catalog.php">
                 <div class="buyout-coin__left-wrapper">
-                    <p class="buyout-coin-name">
+                    <p class="heading-4 buyout-coin-name">
                         Золотая инвестиционная российская монета Георгий Победоносец 50 рублей
                     </p>
 
-                    <p class="buyout-coin__more-info">Подробнее</p>
+                    <p class="description-text buyout-coin__more-info">Подробнее</p>
                 </div>
 
                 <img src="/images/coins/coin-2.png" alt="" class="buyout-coin__image">
@@ -31,23 +32,11 @@
 
             <a class="swiper-slide buyout-coin-item" href="/catalog/catalog.php">
                 <div class="buyout-coin__left-wrapper">
-                    <p class="buyout-coin-name">
-                        Монета Золотой червонец (сеятель). Вес 7.74 Проба 900
-                    </p>
-
-                    <p class="buyout-coin__more-info">Подробнее</p>
-                </div>
-
-                <img src="/images/coins/coin-2.png" alt="" class="buyout-coin__image">
-            </a>
-
-            <a class="swiper-slide buyout-coin-item" href="/catalog/catalog.php">
-                <div class="buyout-coin__left-wrapper">
-                    <p class="buyout-coin-name">
+                    <p class="heading-4 buyout-coin-name">
                         Золотая инвестиционная российская монета Георгий Победоносец 50 рублей
                     </p>
 
-                    <p class="buyout-coin__more-info">Подробнее</p>
+                    <p class="description-text buyout-coin__more-info">Подробнее</p>
                 </div>
 
                 <img src="/images/coins/coin-2.png" alt="" class="buyout-coin__image">
@@ -55,11 +44,11 @@
 
             <a class="swiper-slide buyout-coin-item" href="/catalog/catalog.php">
                 <div class="buyout-coin__left-wrapper">
-                    <p class="buyout-coin-name">
-                        Монета Золотой червонец (сеятель). Вес 7.74 Проба 900
+                    <p class="heading-4 buyout-coin-name">
+                        Золотая инвестиционная российская монета Георгий Победоносец 50 рублей
                     </p>
 
-                    <p class="buyout-coin__more-info">Подробнее</p>
+                    <p class="description-text buyout-coin__more-info">Подробнее</p>
                 </div>
 
                 <img src="/images/coins/coin-2.png" alt="" class="buyout-coin__image">

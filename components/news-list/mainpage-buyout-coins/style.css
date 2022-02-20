@@ -1,10 +1,183 @@
 .buyout-coins__title
 {
-    margin-bottom: 30px;
     color: #00345E;
 }
 
-.swiper-slide buyout-coin-item
+.buyout-coins__title-navigation-wrapper
 {
-    display: block;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-buyout-coins-slider-nav
+{
+    display: none;
+}
+@media screen and (max-width: 992px) 
+{
+    .mobile-buyout-coins-slider-nav
+    {
+        display: flex;
+    }
+}
+
+.mobile-buyout-coins-slider-nav .swiper-button-prev,
+.mobile-buyout-coins-slider-nav .swiper-button-next
+{
+    background-color: #ECF0F0;
+    border-radius: 50%;
+
+    padding: 13px 15px 14px 14px;
+
+    transition: opacity .3s;
+}
+
+.mobile-buyout-coins-slider-nav .swiper-button-next
+{
+    transform: rotate(180deg);
+    margin-left: 8px;
+}
+
+.buyout-coins-slider
+{
+    position: relative;
+}
+
+.swiper-slide.buyout-coin-item
+{
+
+    background: #ECF0F0;
+    border-radius: 9px;
+
+    padding: 29px 66px 29px 18px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+@media screen and (max-width: 1400px) 
+{
+    .swiper-slide.buyout-coin-item
+    {
+        padding: 25px 55px 21px 18px;
+    }
+}
+@media screen and (max-width: 1200px) 
+{
+    .swiper-slide.buyout-coin-item
+    {
+        padding: 29px 20px 29px 18px;
+    }
+}
+
+.buyout-coin__left-wrapper
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.buyout-coin-name
+{
+    margin-bottom: 25px;
+
+    color: #202020;
+}
+@media screen and (max-width: 992px) 
+{
+    .buyout-coin-name
+    {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+.buyout-coin__more-info
+{
+    color: #777;
+}
+
+.buyout-coin__image
+{
+    width: 160px;
+    max-height: 160px;
+    margin-left: 8px;
+}
+@media screen and (max-width: 1400px) 
+{
+   .buyout-coin__image
+   {
+       margin-left: 25px;
+   }     
+}
+@media screen and (max-width: 1200px) 
+{
+    .buyout-coin__image
+    {
+        margin-left: 15px;
+    } 
+}
+@media screen and (max-width: 992px) 
+{
+    .buyout-coin__image
+    {
+        margin-left: 22px;
+        width: 100px;
+        max-height: 100px;
+    } 
+}
+
+.desktop-buyout-coins-nav-wrapper
+{
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 100%;
+    z-index: 2;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    pointer-events: none;
+}
+@media screen and (max-width: 992px) 
+{
+    .desktop-buyout-coins-nav-wrapper
+    {
+        display: none;
+    }    
+}
+
+.desktop-buyout-coins-nav-wrapper .swiper-button-prev
+{
+    transform: rotate(180deg);
+}
+
+.desktop-buyout-coins-nav-wrapper .swiper-button-prev,
+.desktop-buyout-coins-nav-wrapper .swiper-button-next
+{
+    padding: 14px 15px 13px 14px;
+
+    background-color: rgba(255, 255, 255, 0.66);
+
+    transition: opacity .3s;
+
+    pointer-events: all;
+}
+
+.desktop-buyout-coins-nav-wrapper .swiper-button-next.swiper-button-disabled,
+.desktop-buyout-coins-nav-wrapper .swiper-button-prev.swiper-button-disabled
+{
+    opacity: 0;
+    pointer-events: none;
 }
