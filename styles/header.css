@@ -528,6 +528,10 @@
 
     color: #00345E;
 }
+#page-header.dark .header-up .content-container .header-right-container > a[href^="tel:"]
+{
+    color: #fff;
+}
 @media screen and (max-width: 992px)
 {
     .header-up .content-container .header-right-container > a[href^="tel:"]
@@ -576,6 +580,11 @@
     display: none;
 }
 
+.sticky-header-menu 
+{
+    margin-left: 20px;
+}
+
 .header-navigation__link
 {
     margin-right: 25px;
@@ -587,6 +596,10 @@
     line-height: 17px;
 
     color: #00345E;
+}
+.sticky-header-menu .header-navigation__link:last-child
+{
+    margin-right: 0;
 }
 #page-header.dark .header-navigation__link
 {
@@ -645,19 +658,30 @@
 
     letter-spacing: 0.025em;
 
-    color: #00345E;
+    color: var(--blue-color);
+}
+#page-header.dark .open-mobile-catalog__text
+{
+    color: #fff;
 }
 
 .open-mobile-catalog__arrow
 {
-    width: 15px;
-
     transition: transform .4s;
 }
 
 #open-mobile-catalog.opened .open-mobile-catalog__arrow
 {
     transform: rotate(90deg);
+}
+
+.open-mobile-catalog__arrow path
+{
+    fill: var(--blue-color);
+}
+#page-header.dark .open-mobile-catalog__arrow path
+{
+    fill: #fff;
 }
 
 .mobile-catalog-navigation-wrapper
@@ -999,4 +1023,80 @@
 #page-header.dark .shop-menu-navigation__link
 {
     color: #fff;
+}
+
+
+/* cart block */
+.personal-navigation__item.cart-wrapper
+{
+    position: relative;
+}
+
+.header-cart-fixed-bg
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    transition: opacity .3s .3s;
+}
+.personal-navigation__item.cart-wrapper.opened .header-cart-fixed-bg
+{
+    opacity: 1;
+    pointer-events: all;
+
+    transition: opacity .3s 0s;
+}
+
+.cart-items-wrapper
+{
+    position: absolute;
+    z-index: 6;
+    top: calc(100% + 19px);
+    right: -68px;
+    padding: 25px 50px 28px 30px;
+
+    width: 100vw;
+    max-width: 510px;
+
+    background-color: #fff;
+
+    opacity: 0;
+
+    transition: opacity .3s 0s;
+}
+.cart-items-wrapper::before
+{
+    content: "";
+    z-index: -1;
+
+    background-color: #fff;
+
+    position: absolute;
+    right: 64px;
+    top: -23px;
+
+    height: 25px;
+    width: 25px;
+
+    clip-path: polygon(50% 4%, 0% 100%, 100% 100%);
+    opacity: 0;
+
+    transition: opacity .3s 0s;
+}
+
+.personal-navigation__item.cart-wrapper.opened .cart-items-wrapper,
+.personal-navigation__item.cart-wrapper.opened .cart-items-wrapper::before
+{
+    opacity: 1;
+
+    transition: opacity .3s .3s;
 }
