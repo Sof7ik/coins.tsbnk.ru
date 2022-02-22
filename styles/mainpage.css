@@ -1,3 +1,131 @@
+#page-header
+{
+    position: fixed;
+}
+
+/* slider */
+.mainpage-slider-wrapper
+{
+    position: relative;
+
+    min-height: 540px;
+    padding-top: calc(120px + 30px);
+    padding-bottom: 54px;
+
+    background-color: #000;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.mainpage-slider-wrapper .content-container
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mainpage-top-slider
+{
+    width: 100%;
+}
+
+.swiper-slide
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: static;
+    overflow: visible;
+}
+.swiper-slide::before
+{
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+    min-height: 540px;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: url("/images/mainpage/top-slider/slide-bg.png");
+}
+
+.slide-title-collection-wrapper
+{
+    max-width: 540px;
+}
+
+.mainpage-top-slider__slide-title
+{
+    color: #fff;
+
+    margin-bottom: 27px;
+}
+
+.mainpage-top-slider__collection
+{
+    color: #fff;
+}
+
+.mainpage-top-slider-pagination
+{
+    position: absolute;
+    bottom: 56px;
+    left: 0;
+    width: 100%;
+}
+
+.mainpage-top-slider-pagination .content-container
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainpage-slider-wrapper .mainpage-top-slider-pagination .swiper-pagination-bullet 
+{
+    position: static;
+
+    margin: 0;
+    margin-right: 8px;
+    
+    width: 15px;
+    height: 15px;
+    
+    display: block;
+    
+    border-radius: 50%;
+    background: unset;
+    /* background-color: #fff; */
+    opacity: 1;
+
+    font-family: "Roboto", "RF Dewi", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+
+    transition: background-color .3s;
+}
+
+.mainpage-top-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active
+{
+    background-color: #fff;
+}
+
 .famous-collections
 {
     margin-top: 80px;

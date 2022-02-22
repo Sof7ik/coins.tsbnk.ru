@@ -1,5 +1,65 @@
 <?php require($_SERVER["DOCUMENT_ROOT"]."/header.html"); ?>
 <link rel="stylesheet" href="/styles/mainpage.css">
+<script src="/js/mainpage.js" defer></script>
+
+<section class="mainpage-slider-wrapper">
+    <div class="content-container">
+        <!-- Slider main container -->
+        <div class="swiper mainpage-top-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="slide-title-collection-wrapper">
+                        <p class="heading-1 mainpage-top-slider__slide-title">
+                            Подарочная серебряная монета Москва из серии Скайлайн
+                        </p>
+
+                        <p class="heading-3 mainpage-top-slider__collection">
+                            Коллекция Скайлайн доллары
+                        </p>
+                    </div>
+
+                    <img src="/images/mainpage/top-slider/ex-1.jpg" alt="монетка">
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-title-collection-wrapper">
+                        <p class="heading-1 mainpage-top-slider__slide-title">
+                            Подарочная серебряная монета Москва из серии Скайлайн
+                        </p>
+
+                        <p class="heading-3 mainpage-top-slider__collection">
+                            Коллекция Скайлайн доллары
+                        </p>
+                    </div>
+
+                    <img src="/images/mainpage/top-slider/ex-1.jpg" alt="монетка">
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-title-collection-wrapper">
+                        <p class="heading-1 mainpage-top-slider__slide-title">
+                            Подарочная серебряная монета Москва из серии Скайлайн
+                        </p>
+
+                        <p class="heading-3 mainpage-top-slider__collection">
+                            Коллекция Скайлайн доллары
+                        </p>
+                    </div>
+
+                    <img src="/images/mainpage/top-slider/ex-1.jpg" alt="монетка">
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination mainpage-top-slider-pagination">
+            <div class="content-container">
+                
+            </div>
+        </div>
+    </div>
+</section>
 
 <div class="content-container">
     <section class="famous-collections">
