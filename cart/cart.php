@@ -1,5 +1,6 @@
 <?php require($_SERVER["DOCUMENT_ROOT"]."/header.html"); ?>
 <link rel="stylesheet" href="/cart/cart.css">
+<script src="/cart/cart.js" defer></script>
 
 <?php require $_SERVER["DOCUMENT_ROOT"] . "/components/breadcrumbs/breadcrumbs-blue/breadcrumbs.html"; ?>
 
@@ -34,82 +35,26 @@
                     </div>
 
                     <div class="price-quantity-wrapper">
-                        <p class="coin-item__old-price">158 000 &#8381;</p>
-                        <p class="coin-item__actual-price">142 000 &#8381;</p>
+                        <div class="coin-prices">
+                            <p class="coin-item__old-price">158 000 &#8381;</p>
+                            <p class="coin-item__actual-price">142 000 &#8381;</p>
+                        </div>
 
                         <div class="coin-item__quantity-wrapper">
-                            <button class="quantity-change-btn disabled decrement" disabled>
+                            <button class="quantity-change-btn decrement" disabled data-quantity-role="decrement">
                                 <img src="/images/icons/cart/decrement-quantity.svg" alt="-">
                             </button>
 
-                            <span class="quantity-value">1</span>
+                            <input type="number" class="quantity-value" value="1" min="1">
 
-                            <button class="quantity-change-btn increment">
+                            <button class="quantity-change-btn increment" data-quantity-role="increment">
                                  <img src="/images/icons/cart/increment-quantity.svg" alt="+">
                             </button>
                         </div>
-                    </div>
-                </div>
 
-                <div class="coin-item">
-                    <div class="coin-image__text-wrapper">
-                        <img src="/images/coins/coin-2.png" alt="" class="coin-item__image">
-
-                        <div class="coin-item__name-wrapper">
-                            <a href="/catalog/detail/catalog-detail.php" class="description-text coin-item__name">
-                                Российская монета "Сезоны русского языка и литературы во Французской Республике и французского языка и литературы в Российской Федерации" 2012 из серебро 31.1 гр.
-                            </a>
-
-                            <button class="delete-from-cart">Удалить</button>
-                        </div>
-                    </div>
-
-                    <div class="price-quantity-wrapper">
-                        <p class="coin-item__old-price">158 000 &#8381;</p>
-                        <p class="coin-item__actual-price">142 000 &#8381;</p>
-
-                        <div class="coin-item__quantity-wrapper">
-                            <button class="quantity-change-btn disabled decrement" disabled>
-                                <img src="/images/icons/cart/decrement-quantity.svg" alt="-">
-                            </button>
-
-                            <span class="quantity-value">1</span>
-
-                            <button class="quantity-change-btn increment">
-                                 <img src="/images/icons/cart/increment-quantity.svg" alt="+">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coin-item">
-                    <div class="coin-image__text-wrapper">
-                        <img src="/images/coins/coin-3.jpg" alt="" class="coin-item__image">
-
-                        <div class="coin-item__name-wrapper">
-                            <a href="/catalog/detail/catalog-detail.php" class="description-text coin-item__name">
-                                Российская монета "Сезоны русского языка и литературы во Французской Республике и французского языка и литературы в Российской Федерации" 2012 из серебро 31.1 гр.
-                            </a>
-
-                            <button class="delete-from-cart">Удалить</button>
-                        </div>
-                    </div>
-
-                    <div class="price-quantity-wrapper">
-                        <p class="coin-item__old-price">158 000 &#8381;</p>
-                        <p class="coin-item__actual-price">142 000 &#8381;</p>
-
-                        <div class="coin-item__quantity-wrapper">
-                            <button class="quantity-change-btn disabled decrement" disabled>
-                                <img src="/images/icons/cart/decrement-quantity.svg" alt="-">
-                            </button>
-
-                            <span class="quantity-value">1</span>
-
-                            <button class="quantity-change-btn increment">
-                                 <img src="/images/icons/cart/increment-quantity.svg" alt="+">
-                            </button>
-                        </div>
+                        <button class="delete-from-cart mobile">
+                            <img src="/images/icons/header/gold-close.svg" alt="золотой крестик">
+                        </button>
                     </div>
                 </div>
 
@@ -127,26 +72,32 @@
                     </div>
 
                     <div class="price-quantity-wrapper">
-                        <p class="coin-item__old-price">158 000 &#8381;</p>
-                        <p class="coin-item__actual-price">142 000 &#8381;</p>
+                        <div class="coin-prices">
+                            <p class="coin-item__old-price">158 000 &#8381;</p>
+                            <p class="coin-item__actual-price">142 000 &#8381;</p>
+                        </div>
 
                         <div class="coin-item__quantity-wrapper">
-                            <button class="quantity-change-btn disabled decrement" disabled>
+                            <button class="quantity-change-btn decrement" disabled data-quantity-role="decrement">
                                 <img src="/images/icons/cart/decrement-quantity.svg" alt="-">
                             </button>
 
-                            <span class="quantity-value">1</span>
+                            <input type="number" class="quantity-value" value="1" min="1">
 
-                            <button class="quantity-change-btn increment">
+                            <button class="quantity-change-btn increment" data-quantity-role="increment">
                                  <img src="/images/icons/cart/increment-quantity.svg" alt="+">
                             </button>
                         </div>
+
+                        <button class="delete-from-cart mobile">
+                            <img src="/images/icons/header/gold-close.svg" alt="золотой крестик">
+                        </button>
                     </div>
                 </div>
 
                 <div class="coin-item">
                     <div class="coin-image__text-wrapper">
-                        <img src="/images/coins/coin-2.png" alt="" class="coin-item__image">
+                        <img src="/images/coins/coin-1.png" alt="" class="coin-item__image">
 
                         <div class="coin-item__name-wrapper">
                             <a href="/catalog/detail/catalog-detail.php" class="description-text coin-item__name">
@@ -158,51 +109,26 @@
                     </div>
 
                     <div class="price-quantity-wrapper">
-                        <p class="coin-item__old-price">158 000 &#8381;</p>
-                        <p class="coin-item__actual-price">142 000 &#8381;</p>
+                        <div class="coin-prices">
+                            <p class="coin-item__old-price">158 000 &#8381;</p>
+                            <p class="coin-item__actual-price">142 000 &#8381;</p>
+                        </div>
 
                         <div class="coin-item__quantity-wrapper">
-                            <button class="quantity-change-btn disabled decrement" disabled>
+                            <button class="quantity-change-btn decrement" disabled data-quantity-role="decrement">
                                 <img src="/images/icons/cart/decrement-quantity.svg" alt="-">
                             </button>
 
-                            <span class="quantity-value">1</span>
+                            <input type="number" class="quantity-value" value="1" min="1">
 
-                            <button class="quantity-change-btn increment">
+                            <button class="quantity-change-btn increment" data-quantity-role="increment">
                                  <img src="/images/icons/cart/increment-quantity.svg" alt="+">
                             </button>
                         </div>
-                    </div>
-                </div>
 
-                <div class="coin-item">
-                    <div class="coin-image__text-wrapper">
-                        <img src="/images/coins/coin-3.jpg" alt="" class="coin-item__image">
-
-                        <div class="coin-item__name-wrapper">
-                            <a href="/catalog/detail/catalog-detail.php" class="description-text coin-item__name">
-                                Российская монета "Сезоны русского языка и литературы во Французской Республике и французского языка и литературы в Российской Федерации" 2012 из серебро 31.1 гр.
-                            </a>
-
-                            <button class="delete-from-cart">Удалить</button>
-                        </div>
-                    </div>
-
-                    <div class="price-quantity-wrapper">
-                        <p class="coin-item__old-price">158 000 &#8381;</p>
-                        <p class="coin-item__actual-price">142 000 &#8381;</p>
-
-                        <div class="coin-item__quantity-wrapper">
-                            <button class="quantity-change-btn disabled decrement" disabled>
-                                <img src="/images/icons/cart/decrement-quantity.svg" alt="-">
-                            </button>
-
-                            <span class="quantity-value">1</span>
-
-                            <button class="quantity-change-btn increment">
-                                 <img src="/images/icons/cart/increment-quantity.svg" alt="+">
-                            </button>
-                        </div>
+                        <button class="delete-from-cart mobile">
+                            <img src="/images/icons/header/gold-close.svg" alt="золотой крестик">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -215,12 +141,22 @@
                         При оплате инвестиционных монет (Георгий Победоносец) банковской картой к цене добавляется комиссия 2,5 %
                     </p>
 
-                    <div class="cart-total-price-wrapper">
-                        <p class="cart-total-price__name">Сумма</p>
-                        <p class="cart-total-price__value">284 000 &#8381;</p>
-                    </div>
+                    <div class="order-btn-summ-wrapper">
+                        <div class="cart-total-price-wrapper">
+                            <p class="cart-total-price__name">Сумма: </p>
+                            <p class="cart-total-price__value">284 000 &#8381;</p>
+                        </div>
 
-                    <a href="/cart/cart-proceed/proceed.php" class="mint-btn big filled full-width cart-proceed-btn">Перейти к оформлению</a>
+                        <a 
+                            href="/cart/cart-proceed/proceed.php" 
+                            class="mint-btn big filled full-width cart-proceed-btn desktop">
+                            Перейти к оформлению</a>
+
+                        <a 
+                        href="/cart/cart-proceed/proceed.php" 
+                        class="mint-btn mini filled cart-proceed-btn mobile">
+                           Оформить</a>
+                    </div>
                 
                     <div class="other-pages-links">
                         <a 
@@ -245,8 +181,6 @@
             </div>
         </div>
     <?}?>
-
-   
 </div>
 
 <?php require($_SERVER["DOCUMENT_ROOT"]."/footer.html"); ?>
