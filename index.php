@@ -100,9 +100,7 @@
         </div>
     </section>
 
-    <?
-        require $_SERVER["DOCUMENT_ROOT"] . "/components/news-list/mainpage-buyout-coins/template.php";
-    ?>
+    <? require $_SERVER["DOCUMENT_ROOT"] . "/components/news-list/mainpage-buyout-coins/template.php"; ?>
 </div>
 
 <?php require($_SERVER["DOCUMENT_ROOT"]."/footer.html");?>
