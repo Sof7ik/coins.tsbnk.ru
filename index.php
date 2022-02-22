@@ -2,62 +2,63 @@
 <link rel="stylesheet" href="/styles/mainpage.css">
 <script src="/js/mainpage.js" defer></script>
 
+<?
+
+    $array = [
+        [
+            "title" => "Подарочная серебряная монета Москва из серии Скайлайн",
+            "description" => "Коллекция Скайлайн доллары",
+            "image" => "/images/mainpage/top-slider/ex-1.jpg",
+            "bg" => "/images/mainpage/top-slider/slide-bg.png"
+        ],
+        [
+            "title" => "Подарочная серебряная монета Москва из серии Скайлайн монета Москва из серии",
+            "description" => "Коллекция Скайлайн доллары",
+            "image" => "/images/coins/coin-1.png",
+            "bg" => "/images/mainpage/top-slider/slide-bg.png"
+        ],
+        [
+            "title" => "Подарочная с Скайлайн монета Москва из серии",
+            "description" => "Коллекция Скайлайн доллары",
+            "image" => "/images/coins/coin-2.png",
+            "bg" => "/images/mainpage/top-slider/slide-bg.png"
+        ],
+        [
+            "title" => "Пода Скайлайн монета Москва из серии",
+            "description" => "Коллекция Скайлайн доллары",
+            "image" => "/images/coins/coin-3.jpg",
+            "bg" => "/images/mainpage/top-slider/slide-bg.png"
+        ],
+    ]
+
+?>
+
 <section class="mainpage-slider-wrapper">
-    <div class="content-container">
-        <!-- Slider main container -->
-        <div class="swiper mainpage-top-slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
+    <!-- Slider main container -->
+    <div class="swiper mainpage-top-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <?foreach ($array as $key => $slide) {?>
                 <div class="swiper-slide">
-                    <div class="slide-title-collection-wrapper">
-                        <p class="heading-1 mainpage-top-slider__slide-title">
-                            Подарочная серебряная монета Москва из серии Скайлайн
-                        </p>
+                    <div class="slide-bg" style="background-image: url(<?=$slide['bg']?>)"></div>
 
-                        <p class="heading-3 mainpage-top-slider__collection">
-                            Коллекция Скайлайн доллары
-                        </p>
+                    <div class="content-container">
+                        <div class="slide-title-collection-wrapper">
+                            <p class="heading-1 mainpage-top-slider__slide-title"><?=$slide['title']?></p>
+
+                            <p class="heading-3 mainpage-top-slider__collection"><?=$slide['description']?></p>
+                        </div>
+
+                        <img src="<?=$slide['image']?>" alt="монетка" class="mainpage-slider__slide-image">
                     </div>
-
-                    <img src="/images/mainpage/top-slider/ex-1.jpg" alt="монетка">
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="slide-title-collection-wrapper">
-                        <p class="heading-1 mainpage-top-slider__slide-title">
-                            Подарочная серебряная монета Москва из серии Скайлайн
-                        </p>
-
-                        <p class="heading-3 mainpage-top-slider__collection">
-                            Коллекция Скайлайн доллары
-                        </p>
-                    </div>
-
-                    <img src="/images/mainpage/top-slider/ex-1.jpg" alt="монетка">
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="slide-title-collection-wrapper">
-                        <p class="heading-1 mainpage-top-slider__slide-title">
-                            Подарочная серебряная монета Москва из серии Скайлайн
-                        </p>
-
-                        <p class="heading-3 mainpage-top-slider__collection">
-                            Коллекция Скайлайн доллары
-                        </p>
-                    </div>
-
-                    <img src="/images/mainpage/top-slider/ex-1.jpg" alt="монетка">
-                </div>
-            </div>
+                </div>  
+            <?}?>
         </div>
+    </div>
 
-        <div class="swiper-pagination mainpage-top-slider-pagination">
-            <div class="content-container">
-                
-            </div>
-        </div>
+    <div class="swiper-pagination mainpage-top-slider-pagination">
+        <div class="content-container"></div>
     </div>
 </section>
 
