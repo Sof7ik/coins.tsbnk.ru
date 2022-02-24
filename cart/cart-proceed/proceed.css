@@ -480,3 +480,154 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.offices-list-wrapper
+{
+    margin-top: 30px;
+}
+
+.office-item
+{
+    position: relative;
+
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+.office-item::after
+{
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1px;
+
+    background-color: #ECF0F0;
+}
+/* TODO не работает у последнего элемента убрать полоску */
+.office-item:last-child
+{
+    padding-bottom: 0;
+}
+.office-item:last-child::after
+{
+    display: none;
+}
+
+.office-item__name
+{
+    margin-right: 30px;
+}
+
+.offices-list-wrapper .bottom-page-pagination
+{
+    margin-top: 40px;
+}
+
+/* payments */
+.payment-types-summary-wrapper
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.payment-types
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-top: 5px;
+}
+
+.payment-type
+{
+    margin-right: 48px;
+    max-width: 118px;
+
+    cursor: pointer;
+}
+.payment-types .payment-type:last-child
+{
+    margin-right: 0;
+}
+
+.paymnet-type__icon-wrapper
+{
+    padding: 22px 39px;
+    border: 1px solid #E9ECEE;
+
+    transition: border .3s;
+}
+
+.payment-type.active .paymnet-type__icon-wrapper
+{
+    border: 1px solid var(--gold-color);
+}
+
+.payment-type__icon
+{
+    display: block;
+}
+
+.payment-type__icon path
+{
+    fill: #777777;
+    transition: fill .3s;
+}
+
+.payment-type.active .payment-type__icon path
+{
+    fill: var(--gold-color);
+}
+
+.payment-type__name
+{
+    margin-top: 13px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+
+    color: #333333;
+}
+
+.payment-type-summary
+{
+    background-color: #ECF0F0;
+    border-radius: 4px;
+
+    padding: 10px 15px;
+
+    max-width: 276px;
+}
+
+.payment-type-summary__text
+{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: 0.002em;
+
+    color: #556871;
+}
+
+.payment-type-summary__text #payment-type-summary__choise
+{
+    font-weight: normal;
+}

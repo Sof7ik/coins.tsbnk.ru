@@ -241,35 +241,140 @@
 
                     <div class="offices-list-wrapper">
                         <div class="office-item">
-                            <p class="office-item__name">г. Нижний Новгород, ул. Студеная, д. 5</p>
+                            <p class="description-text office-item__name">г. Нижний Новгород, ул. Студеная, д. 5</p>
                             <button class="mint-btn blue choose-pickup-point">Выбрать</button> 
                         </div>
 
                         <div class="office-item">
-                            <p class="office-item__name">
+                            <p class="description-text office-item__name">
                                 196070, г. Санкт-Петербург, проспект Московский, дом 167, лит. А
                             </p>
                             <button class="mint-btn blue choose-pickup-point">Выбрать</button> 
                         </div>
 
                         <div class="office-item">
-                            <p class="office-item__name">
+                            <p class="description-text office-item__name">
                                 196070, г. Санкт-Петербург, проспект Московский, дом 167, лит. А
                             </p>
                             <button class="mint-btn blue choose-pickup-point">Выбрать</button> 
                         </div>
 
-                        <? require $_SERVER["DOCUMENT_ROOT"]."/components/pagination/template.php"; ?>
+                        <? require $_SERVER["DOCUMENT_ROOT"]."/components/pagination/pagination-white/template.php"; ?>
                     </div>
                 </div>
             </section>
 
             <section class="payments cart-proceed__left-block">
                 <h2 class="heading-3 payments__title">5. Оплата</h2>
+
+                <div class="payment-types-summary-wrapper">
+                    <div class="payment-types">
+                        <div class="payment-type active" role="button">
+                            <div class="paymnet-type__icon-wrapper">
+                                <svg class="payment-type__icon" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_5773)">
+                                        <path d="M36.7292 6.66602H4.27081C1.91675 6.66602 0 8.53602 0 10.8327V29.1661C0 31.4627 1.91675 33.3327 4.27081 33.3327H36.7291C39.0832 33.3327 40.9999 31.4627 40.9999 29.1661V10.8327C41 8.53602 39.0832 6.66602 36.7292 6.66602ZM39.2917 29.166C39.2917 30.5444 38.142 31.666 36.7292 31.666H4.27081C2.85799 31.666 1.70831 30.5444 1.70831 29.166V10.8327C1.70831 9.45437 2.85799 8.33273 4.27081 8.33273H36.7291C38.1419 8.33273 39.2916 9.45437 39.2916 10.8327V29.166H39.2917Z" />
+                                        <path d="M40.1458 11.666H0.854193C0.382693 11.666 0 12.0394 0 12.4994V17.4994C0 17.9594 0.382693 18.3327 0.854193 18.3327H40.1459C40.6174 18.3327 41.0001 17.9594 41.0001 17.4994V12.4994C41 12.0394 40.6173 11.666 40.1458 11.666ZM39.2917 16.666H1.70831V13.3327H39.2916V16.666H39.2917Z" />
+                                        <path d="M16.2292 23.334H5.97919C5.50769 23.334 5.125 23.7073 5.125 24.1673C5.125 24.6273 5.50769 25.0006 5.97919 25.0006H16.2292C16.7007 25.0006 17.0834 24.6273 17.0834 24.1673C17.0834 23.7073 16.7007 23.334 16.2292 23.334Z" />
+                                        <path d="M16.2292 26.666H5.97919C5.50769 26.666 5.125 27.0394 5.125 27.4994C5.125 27.9594 5.50769 28.3327 5.97919 28.3327H16.2292C16.7007 28.3327 17.0834 27.9594 17.0834 27.4994C17.0833 27.0394 16.7007 26.666 16.2292 26.666Z" />
+                                        <path d="M33.3118 21.666H31.6035C30.1907 21.666 29.041 22.7877 29.041 24.166V25.8327C29.041 27.211 30.1907 28.3327 31.6035 28.3327H33.3118C34.7246 28.3327 35.8743 27.211 35.8743 25.8327V24.166C35.8743 22.7877 34.7246 21.666 33.3118 21.666ZM34.166 25.8327C34.166 26.2927 33.7833 26.6661 33.3118 26.6661H31.6035C31.132 26.6661 30.7493 26.2927 30.7493 25.8327V24.1661C30.7493 23.7061 31.132 23.3327 31.6035 23.3327H33.3118C33.7833 23.3327 34.166 23.7061 34.166 24.1661V25.8327Z"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_5773">
+                                            <rect width="41" height="40" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+    
+                            <p class="payment-type__name">
+                                Онлайн-оплата на сайте через платежную систему банка
+                            </p>
+                        </div>
+
+                        <div class="payment-type" role="button">
+                            <div class="paymnet-type__icon-wrapper">
+                                <svg class="payment-type__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_5769)">
+                                        <path d="M19.9964 16.2591C20.7703 16.2604 21.3975 16.8876 21.3988 17.6615C21.3988 18.1253 21.7748 18.5013 22.2386 18.5013C22.7025 18.5013 23.0784 18.1253 23.0784 17.6615C23.0768 16.2837 22.1615 15.0738 20.8362 14.6972V14.1933C20.8362 13.7295 20.46 13.3535 19.9964 13.3535C19.5326 13.3535 19.1566 13.7295 19.1566 14.1933V14.6972C17.6765 15.1161 16.732 16.5625 16.9436 18.086C17.1552 19.6097 18.4582 20.7438 19.9964 20.7438C20.7709 20.7438 21.3988 21.3717 21.3988 22.1462C21.3988 22.9208 20.7709 23.5486 19.9964 23.5486C19.2216 23.5486 18.5937 22.9208 18.5937 22.1462C18.5937 21.6824 18.2177 21.3064 17.7539 21.3064C17.2903 21.3064 16.9141 21.6824 16.9141 22.1462C16.916 23.524 17.831 24.7339 19.1566 25.1108V25.7909C19.1566 26.2547 19.5326 26.6307 19.9964 26.6307C20.46 26.6307 20.8362 26.2547 20.8362 25.7909V25.1108C22.3161 24.6916 23.2605 23.2452 23.0489 21.7217C22.8373 20.1983 21.5346 19.0639 19.9964 19.0642C19.2216 19.0642 18.5937 18.4363 18.5937 17.6615C18.5937 16.8869 19.2216 16.2591 19.9964 16.2591Z" />
+                                        <path d="M35.7925 7.66797H4.19903C1.88038 7.66895 0.000984153 9.54835 0 11.867V28.1091C0.000984153 30.4277 1.88038 32.3071 4.19903 32.3081H35.801C38.1197 32.3071 39.9991 30.4277 40.0001 28.1091V11.867C39.9922 9.54802 38.1118 7.67125 35.7925 7.66797ZM38.3119 28.1091C38.308 29.4987 37.1824 30.6242 35.7925 30.6285H4.19903C2.80942 30.6242 1.68355 29.4987 1.67961 28.1091V11.867C1.68355 10.4774 2.80942 9.35185 4.19903 9.34758H35.801C37.1906 9.35185 38.3162 10.4774 38.3204 11.867L38.3119 28.1091Z" />
+                                        <path d="M33.055 11.3116C32.8962 11.1414 32.6745 11.0443 32.4419 11.043H7.60033C7.36905 11.0426 7.14795 11.1368 6.9872 11.3031L3.56073 14.9228C3.41278 15.079 3.33142 15.2869 3.33405 15.5021V24.4714C3.33536 24.6859 3.41606 24.8926 3.56073 25.0507L6.9872 28.6704C7.14696 28.8384 7.36873 28.9325 7.60033 28.9309H32.3999C32.6312 28.9309 32.8523 28.8367 33.013 28.6704L36.4392 25.0507C36.5874 24.8945 36.6688 24.6866 36.6662 24.4714V15.5021C36.6649 15.2902 36.5838 15.0862 36.4392 14.931L33.055 11.3116ZM34.9866 24.1354L32.0387 27.2512H7.96151L5.01366 24.1354V15.8381L7.96151 12.7226H32.0807L34.9866 15.8381V24.1354Z"/>
+                                    </g>
+
+                                    <defs>
+                                        <clipPath id="clip0_2_5769">
+                                        <rect width="40" height="40" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+    
+                            <p class="payment-type__name">
+                                Наличными в кассе банка
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="payment-type-summary">
+                        <p class="payment-type-summary__text">
+                            Ваш выбор: <span id="payment-type-summary__choise">Онлайн-оплата на сайте через платежную систему банка</span>
+                        </p>
+                    </div>
+                </div>
             </section>
 
             <section class="customer-info cart-proceed__left-block">
                 <h2 class="heading-3 customer-info__title">6. Покупатель</h2>
+
+                <div class="customer-info-form">
+                    <div class="form-input-wrapper">
+                        <label for="customer-info__name">ФИО*</label>
+                    
+                        <input 
+                            type="text"
+                            placeholder="Пушкин Александр Сергеевич"
+                            id="customer-info__name"
+                            name="name"
+                            autocomplete="name"
+                            >
+                    </div>
+
+                    <div class="two-inputs-row">
+                        <div class="form-input-wrapper">
+                            <label for="customer-info__email">Электронная почта*</label>
+                        
+                            <input 
+                                type="email"
+                                placeholder="email@gmail.com"
+                                id="customer-info__email"
+                                name="email"
+                                autocomplete="email"
+                                >
+                        </div>
+
+                        <div class="form-input-wrapper">
+                            <label for="customer-info__phone">Телефон*</label>
+                        
+                            <input 
+                                type="tel"
+                                placeholder="+7 ___ _________"
+                                id="customer-info__phone"
+                                name="phone"
+                                autocomplete="tel"
+                                >
+                        </div>
+                    </div>
+
+                    <div class="attach-documents">
+                        <p class="heading-4 attach-document__title">Прикрепить документы</p>
+
+                        <p class="description-text regular attach-documents__description">
+                            Действующее законодательство (ФЗ №115) требует проводить все операции с драгоценными металлами по предъявлению паспорта. Также вы обязаны его показать сотрудникам службы доставки ФГУП Спецсвязь.
+                        </p>
+
+                        
+                    </div>
+                </div>
             </section>
 
             <button class="mint-btn filled big">Оформить заказ</button>
