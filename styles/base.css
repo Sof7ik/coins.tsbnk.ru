@@ -237,8 +237,7 @@ a
 
 .main-text
 {
-    /* font-family: "RF Dewi", sans-serif; */
-    font-family: "RF Dewi Check", sans-serif;
+    font-family: "RF Dewi", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -349,16 +348,162 @@ a
 
     font-family: "RF Dewi", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 21px;
+   
+    padding: 10px 50px;
+
+    letter-spacing: 0.002em;
 
     color: #00345E;
-
-    padding: 12px 32px;
 
     box-shadow: none;
 
     max-width: max-content;
-    min-width: 160px;
+}
+
+/* custom gold checkbox */
+
+/* it must be label */
+.custom-checkbox
+{
+    position: relative;
+    cursor: pointer;
+
+    padding-left: calc(10px + 16px);
+
+    transition: color .3s;
+}
+
+/* before is the empty square */
+.custom-checkbox::before
+{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid #777777;
+    border-radius: 2px;
+
+    background-color: #F9FBFB;
+
+    transition: border .3s;
+}
+
+.custom-checkbox.transparent-checkbox::before
+{
+    background-color: transparent;
+}
+
+/* after is a content in the empty square like full-color or check-mark image */
+.custom-checkbox::after
+{
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px;
+
+    width: 10px;
+    height: 10px;
+
+    /* full-color when checked */
+    background-color: var(--gold-color);
+    border-radius: 2px;
+
+    opacity: 0;
+
+    transition: opacity .3s;
+}
+
+/* check-mark when checked */
+.custom-checkbox.check-mark::after
+{
+    background-color: transparent;
+    border-radius: 0;
+
+    background-image: url("/images/icons/custom-checkbox/check-mark.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* set border color to empty square */
+.custom-checkbox-wrapper input[type="checkbox"]:checked + .custom-checkbox::before
+{
+    border: 1px solid var(--gold-color);
+}
+
+/* set opacity to checkbox content */
+.custom-checkbox-wrapper input[type="checkbox"]:checked + .custom-checkbox::after
+{
+    opacity: 1;
+}
+
+/* set border to gold color when focus with keyboard */
+.custom-checkbox-wrapper input[type="checkbox"]:focus-visible + .custom-checkbox::before 
+{
+    border: 1px solid var(--gold-color);
+}
+.custom-checkbox-wrapper input[type="checkbox"]:focus-visible + .custom-checkbox
+{
+    color: var(--gold-color);
+}
+
+/* hover on label */
+.custom-checkbox:hover
+{
+    color: var(--gold-color);
+}
+.custom-checkbox:hover::before
+{
+    border: 1px solid var(--gold-color);
+}
+
+/* form inputs START */
+.form-input-wrapper input
+{
+    display: block;
+    width: 100%;
+
+    padding: 18px 20px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 23px;
+
+    color: #000;
+
+    transition: color .3s;
+}
+.form-input-wrapper input:placeholder-shown
+{
+    color: #58666F;
+}
+
+.form-input-wrapper label
+{
+    display: block;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #333333;
+
+    margin-bottom: 10px;
 }

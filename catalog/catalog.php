@@ -77,46 +77,46 @@
                             <p class="filter-property__name">Металл</p>
         
                             <div class="filter-property__values">
-                                <div class="filter-property__value">
+                                <div class="custom-checkbox-wrapper filter-property__value">
                                     <input type="checkbox" class="filter-property__value-checkbox" id="filter-property__value-1">
         
-                                    <label for="filter-property__value-1" class="checkbox-label">
+                                    <label for="filter-property__value-1" class="custom-checkbox checkbox-label">
                                         Золото
                                     </label>
         
                                 </div>
         
-                                <div class="filter-property__value">
+                                <div class="custom-checkbox-wrapper filter-property__value">
                                     <input type="checkbox" class="filter-property__value-checkbox" id="filter-property__value-2">
         
-                                    <label for="filter-property__value-2" class="checkbox-label">
+                                    <label for="filter-property__value-2" class="custom-checkbox checkbox-label">
                                         Золото+серебро
                                     </label>
         
                                 </div>
         
-                                <div class="filter-property__value">
+                                <div class="custom-checkbox-wrapper filter-property__value">
                                     <input type="checkbox" class="filter-property__value-checkbox" id="filter-property__value-3">
         
-                                    <label for="filter-property__value-3" class="checkbox-label">
+                                    <label for="filter-property__value-3" class="custom-checkbox checkbox-label">
                                         Медь-никель
                                     </label>
         
                                 </div>
         
-                                <div class="filter-property__value">
+                                <div class="custom-checkbox-wrapper filter-property__value">
                                     <input type="checkbox" class="filter-property__value-checkbox" id="filter-property__value-4">
         
-                                    <label for="filter-property__value-4" class="checkbox-label">
+                                    <label for="filter-property__value-4" class="custom-checkbox checkbox-label">
                                         Серебро
                                     </label>
         
                                 </div>
         
-                                <div class="filter-property__value">
+                                <div class="custom-checkbox-wrapper filter-property__value">
                                     <input type="checkbox" class="filter-property__value-checkbox" id="filter-property__value-5">
                                     
-                                    <label for="filter-property__value-5" class="checkbox-label">
+                                    <label for="filter-property__value-5" class="custom-checkbox checkbox-label">
                                         Серебро с покрытием
                                     </label>
         
@@ -127,32 +127,31 @@
                         <div class="filter-property-item">
                             <p class="filter-property__name">Качество</p>
         
-                            <div class="filter-property__values">
+                            <div class="custom-checkbox-wrapper filter-property__values">
                                 <div class="filter-property__value active">
                                     <input type="checkbox" class="filter-property__value-checkbox" id="filter-property__value-7">
         
-                                    <label for="filter-property__value-7" class="checkbox-label">
+                                    <label for="filter-property__value-7" class="custom-checkbox checkbox-label">
                                         Анциркулейтейд
                                     </label>
         
                                 </div>
         
-                                <div class="filter-property__value">
+                                <div class="custom-checkbox-wrapper filter-property__value">
                                     <input type="checkbox" class="filter-property__value-checkbox" id="filter-property__value-8">
         
-                                    <label for="filter-property__value-8" class="checkbox-label">
+                                    <label for="filter-property__value-8" class="custom-checkbox checkbox-label">
                                         Бриллиант - анциркулейтейд
                                     </label>
         
                                 </div>
         
-                                <div class="filter-property__value">
+                                <div class="custom-checkbox-wrapper filter-property__value">
                                     <input type="checkbox" class="filter-property__value-checkbox" id="filter-property__value-9">
         
-                                    <label for="filter-property__value-9" class="checkbox-label">
+                                    <label for="filter-property__value-9" class="custom-checkbox checkbox-label">
                                         Пруф
                                     </label>
-        
                                 </div>
                             </div>
                         </div>

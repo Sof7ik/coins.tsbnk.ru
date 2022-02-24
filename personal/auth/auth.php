@@ -36,10 +36,10 @@
                         Войти
                     </button>
 
-                    <div class="remember-me">
+                    <div class="custom-checkbox-wrapper remember-me">
                         <input type="checkbox" id="remember-me-checkbox">
 
-                        <label for="remember-me-checkbox" class="remember-me-checkbox__label">Запомнить меня</label>
+                        <label for="remember-me-checkbox" class="custom-checkbox remember-me-checkbox__label">Запомнить меня</label>
                     </div>
 
                     <div class="login-with-socials">

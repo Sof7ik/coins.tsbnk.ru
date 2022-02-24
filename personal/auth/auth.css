@@ -118,6 +118,17 @@
     margin-top: 20px;
 }
 
+#remember-me-checkbox
+{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 .remember-me-checkbox__label
 {
     position: relative;
