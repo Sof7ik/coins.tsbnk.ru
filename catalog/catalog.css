@@ -1066,6 +1066,11 @@
     margin-bottom: 13px;
 }
 
+#load-more-buttons
+{
+    padding: 12px 32px;
+}
+
 /* seo text */
 .catalog-desctiption
 {
