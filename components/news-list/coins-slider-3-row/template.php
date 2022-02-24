@@ -15,7 +15,7 @@
             </button>
         </div>
 
-        <a href="" class="watch-all">Посмотреть все</a>
+        <a href="/catalog/catalog.php" class="watch-all">Посмотреть все</a>
     </div>
 
     <div class="swiper linked-coins__slider">

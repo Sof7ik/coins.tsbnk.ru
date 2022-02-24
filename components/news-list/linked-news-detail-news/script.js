@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", e => {
-    const swiper = new Swiper('.linked-detail-news-slider', {
+    const swiper = new Swiper(`.swiper.linked-detail-news-slider`, {
         navigation: {
             nextEl: ".slider-nav .swiper-button-next",
             prevEl: ".slider-nav .swiper-button-prev"

@@ -1,3 +1,25 @@
+function coinPreviewHandler(event)
+{
+    const coinPreviewWrapper = event.currentTarget;
+
+    const imagesQuantity = coinPreviewWrapper.children.length;
+    const wrapperWidth = coinPreviewWrapper.clientWidth;
+
+    const step = wrapperWidth / imagesQuantity;
+
+    const wrapperRect = coinPreviewWrapper.getBoundingClientRect();
+
+    const userPointerPosition = event.clientX - wrapperRect.left;
+    console.log(userPointerPosition);
+
+    const ff = step * userPointerPosition;
+
+    console.log(ff);
+
+    // console.log(imagesQuantity);
+}
+
+
 document.addEventListener("DOMContentLoaded", e => {
     const swiper = new Swiper('.linked-coins__slider', {
         grabCursor: true,
@@ -37,4 +59,7 @@ document.addEventListener("DOMContentLoaded", e => {
             }
         }
     });
+
+    document.querySelectorAll('.linked-coins__coin-item .coin-item__images-preview')
+        .forEach(wrapper => wrapper.addEventListener('mousemove', coinPreviewHandler))
 })

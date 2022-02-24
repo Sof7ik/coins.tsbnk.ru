@@ -275,30 +275,76 @@
 
 .coin-item__images-preview
 {
-    max-width: max-content;
+    /* max-width: max-content; */
     margin: 0 auto;
 
     margin-bottom: 13px;
+
+    position: relative;
+
+    width: 160px;
+    height: 160px;
 }
 @media screen and (max-width: 567px) 
 {
     .coin-item__images-preview
     {
         margin-bottom: 0;
+
+        width: 100px;
+        height: 100px;
     }
 }
 
 .coin-item__images-preview img
 {
-    max-width: 160px;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    opacity: 1;
 }
-@media screen and (max-width: 567px) 
+.coin-item__images-preview img.hidden
 {
-    .coin-item__images-preview img
-    {
-        max-width: 100px;
-    }
+    opacity: 0;
 }
+
+.images-count
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.images-count__position
+{
+    height: 2px;
+    width: 15px;
+
+    margin-right: 3px;
+
+    background-color: #C4C4C4;
+
+    transition: background-color .3s;
+}
+
+.images-count__position.active
+{
+    background-color: #000;
+}
+
+.linked-coins__coin-item.dark .images-count__position.active
+{
+    background-color: #fff;
+}
+
 
 .coin-item__is-in-stock
 {
