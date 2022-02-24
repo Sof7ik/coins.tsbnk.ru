@@ -6,11 +6,11 @@ function topSliderParallax(event)
 
     let koef = (event.clientX * 2 / target.clientWidth) - 1;
 
-    let koef2 = koef * (-5);
+    let koef2 = koef * (-2);
 
-    target.querySelector(".content-container").style.transform = `translateX(${koef2}%)`;
+    target.querySelector(".content-container .mainpage-slider__slide-image").style.transform = `translateX(${koef2}%)`;
 
-    let bgKoef = koef * 10;
+    let bgKoef = koef * 4;
 
     bg.style.left = `${bgKoef}%`;
 }
