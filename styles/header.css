@@ -46,21 +46,6 @@
     background-color: rgba(24, 26, 30, 0.8);
 }
 
-#page-header.sticky::before
-{
-    content: "";
-
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-}
-
 .header-up
 {
     background-color: #E9ECEE;
@@ -757,25 +742,25 @@
     left: 0;
     top: 100%;
 
-    /*background-color: rgba(249, 251, 251, 0.8);*/
-    background-color: rgba(249, 251, 251, 1);
+    background-color: rgba(249, 251, 251, 0.8);
+    /* background-color: rgba(249, 251, 251, 1); */
     width: 100%;
 
     transition: top .7s;
 }
-/*.mobile-catalog-navigation-wrapper::before*/
-/*{*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 0;*/
+.mobile-catalog-navigation-wrapper::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
 
-/*    width: 100%;*/
-/*    height: 100%;*/
+    width: 100%;
+    height: 100%;
 
-/*    backdrop-filter: blur(15px);*/
-/*    -webkit-backdrop-filter: blur(15px);*/
-/*}*/
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
 
 .mobile-catalog-navigation-wrapper.hidden
 {
@@ -1029,8 +1014,8 @@
 
 #page-header.sticky .header-bottom .shop-menu-background
 {
-    /*background-color: rgba(233, 236, 238, 0.8);*/
-    background-color: rgba(233, 236, 238, 1);
+    background-color: rgba(233, 236, 238, 0.8);
+    /* background-color: rgba(233, 236, 238, 1); */
 
     /*transition: background-color .4s;*/
 }
@@ -1038,29 +1023,14 @@
 {
     background-color: rgba(24, 26, 30, 1);
 
-    /*transition: background-color .4s;*/
+    transition: background-color .4s;
 }
 
 #page-header.dark.sticky .header-bottom .shop-menu-background
 {
-    /*background-color: rgba(24, 26, 30, 0.8);*/
-    /*background-color: rgba(24, 26, 30, 1);*/
+    background-color: rgba(24, 26, 30, 0.8);
+    /* background-color: rgba(24, 26, 30, 1); */
 }
-
-/*#page-header.sticky .header-bottom .shop-menu-background::before*/
-/*{*/
-/*    content: "";*/
-
-/*    z-index: -1;*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    left: 0;*/
-/*    top: 0;*/
-
-/*    backdrop-filter: blur(15px);*/
-/*    -webkit-backdrop-filter: blur(15px);*/
-/*}*/
 
 .header-bottom .shop-menu-navigation.hidden + .shop-menu-background
 {
