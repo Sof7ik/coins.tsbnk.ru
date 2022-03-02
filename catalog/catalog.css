@@ -126,6 +126,7 @@
 
 .sort-type-select
 {
+    position: relative;
     margin-right: 15px;
 
     background: #FFFFFF;
@@ -134,6 +135,17 @@
     border-radius: 4px;
 
     padding: 9px 20px; 
+    color: #000;
+
+    outline: none;
+    cursor: pointer;
+    background-image: url("/images/icons/catalog/select-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 10px;
+
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .render-options
@@ -436,6 +448,11 @@
     line-height: 23px;
 
     color: #58666F;
+
+    background-image: url("/images/icons/catalog/select-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 10px;
 
     transition: border .3s;
 }
