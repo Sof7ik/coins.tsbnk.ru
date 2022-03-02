@@ -59,6 +59,10 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: stretch;
+
+    border: 1px solid transparent;
+
+    transition: transform .4s;
 }
 @media screen and (max-width: 1400px) 
 {
@@ -74,6 +78,13 @@
         padding: 29px 20px 29px 18px;
     }
 }
+@media screen and (min-width: 769px)
+{
+    .swiper-slide.buyout-coin-item:hover
+    {
+        transform: scale(0.98);
+    }
+} 
 
 .buyout-coin__left-wrapper
 {
