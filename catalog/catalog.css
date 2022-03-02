@@ -307,6 +307,7 @@
         display: grid;
         grid-template-columns: 213px auto;
         grid-gap: 0 34px;
+        align-items: start;
 
         padding: 20px 0 30px;
     }
@@ -416,6 +417,8 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
+
+    white-space: nowrap;
 
     color: #202020;
 
