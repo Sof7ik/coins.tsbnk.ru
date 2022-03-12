@@ -4,7 +4,7 @@ main
     z-index: 2;
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
     #page-footer
     {
@@ -101,7 +101,7 @@ main
 
     width: 100%;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .cart-items-wrapper
     {
@@ -131,7 +131,7 @@ main
 {
     margin-bottom: 0;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .coin-item
     {
@@ -153,7 +153,7 @@ main
     justify-content: flex-start;
     align-items: center;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .coin-image__text-wrapper
     {
@@ -179,7 +179,7 @@ main
         max-height: 100px;
     }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .coin-item__image
     {
@@ -225,7 +225,7 @@ main
         margin-right: 22px;
     }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .coin-item__name
     {
@@ -255,7 +255,7 @@ main
 {
     width: 20px;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .delete-from-cart
     {
@@ -273,7 +273,7 @@ main
     width: 100%;
     max-width: 102px;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .price-quantity-wrapper
     {
@@ -292,7 +292,7 @@ main
 {
     padding-left: 10px;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .coin-prices
     {
@@ -450,7 +450,7 @@ main
         margin-left: 20px;
     }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .cart-summary-wrapper
     {
@@ -503,7 +503,7 @@ main
 
     margin-bottom: 15px;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .cart-summary-text
     {
@@ -518,7 +518,7 @@ main
     justify-content: space-between;
     align-items: center;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .order-btn-summ-wrapper
     {
@@ -557,7 +557,7 @@ main
 
     margin-bottom: 27px;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .cart-total-price-wrapper
     {
@@ -583,7 +583,7 @@ main
     
     color: #000000;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .cart-total-price__name
     {
@@ -602,7 +602,7 @@ main
 
     white-space: nowrap;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .cart-total-price__name,
     .cart-total-price__value
@@ -629,7 +629,7 @@ main
     font-size: 16px;
     line-height: 21px;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     .cart-proceed-btn.desktop
     {
