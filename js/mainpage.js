@@ -23,9 +23,10 @@ document.addEventListener("DOMContentLoaded", e => {
         // autoplay: {
         //     speed: 600,
         //     delay: 4000,
-        //     disableOnInteraction: false,
+        //     
         //     pauseOnMouseEnter: true,
         // },
+        disableOnInteraction: false,
         loop: true,
         pagination: {
             el: '.swiper-pagination.mainpage-top-slider-pagination .content-container',

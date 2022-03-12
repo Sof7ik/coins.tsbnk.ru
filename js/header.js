@@ -62,13 +62,13 @@ function onPageScroll(event) {
 
     if (document.body.scrollTop > headerUp.clientHeight) {
         header.classList.add('sticky');
-        document.querySelector('.header-mrb').style.display = "block";
+        // document.querySelector('.header-mrb').style.display = "block";
 
         // document.querySelector('#page-header .header-bottom .shop-menu-wrapper').style.height = `51px`;
     }
     else {
         header.classList.remove('sticky');
-        document.querySelector('.header-mrb').style.display = "none";
+        // document.querySelector('.header-mrb').style.display = "none";
 
         // document.querySelector('#page-header .header-bottom .shop-menu-wrapper').style.height = `unset`;
     }
