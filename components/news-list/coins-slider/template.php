@@ -185,7 +185,12 @@
     <div class="swiper linked-coins__slider">
         <div class="swiper-wrapper">
             <?foreach ($coins as $key => $coin) {?>
-                <a class="swiper-slide linked-coins__coin-item <?=$key%2 == 0 ? "dark" : ""?>" href="catalog/detail/catalog-detail.php">
+                <a 
+                    class="swiper-slide linked-coins__coin-item 
+                    <?=$key%2 == 0 ? "dark" : ""?>" 
+                    href="/catalog/detail/catalog-detail.php" 
+                    data-coin-id="<?=$key+1?>">
+                    
                     <div class="top-bar <?=count($coin['statuses']) != 0 ? 'has-status' : ''?>">
                         <div class="coin-item__statuses">
                             <?foreach($coin["statuses"] as $status)
@@ -207,7 +212,7 @@
                                 <?foreach($coin["images"] as $keyImage => $image){?>
                                     <img 
                                         src="<?=$image?>" alt="золотая монета" 
-                                        <?= $keyImage !=0 ? "class='hidden'" : ""?>>
+                                        <?= $keyImage ==0 ? "class='active'" : ""?>>
                                 <?}?>
                             </div>
 

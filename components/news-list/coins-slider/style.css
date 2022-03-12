@@ -191,6 +191,8 @@
     border-radius: 10px;
 
     padding: 12px 20px 21px 20px;
+
+    height: auto;
 }
 @media screen and (max-width: 567px) 
 {
@@ -213,7 +215,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    margin-bottom: 23px;
+    margin-bottom: 17px;
 }
 .top-bar.has-status
 {
@@ -231,6 +233,7 @@
 .coin-item__status
 {
     margin-right: 5px;
+    margin-bottom: 6px;
 
     font-family: "RF Dewi", sans-serif;
     font-style: normal;
@@ -306,11 +309,11 @@
     top: 0;
     z-index: 1;
 
-    opacity: 1;
-}
-.coin-item__images-preview img.hidden
-{
     opacity: 0;
+}
+.coin-item__images-preview img.active
+{
+    opacity: 1;
 }
 
 .images-count

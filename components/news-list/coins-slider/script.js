@@ -1,20 +1,52 @@
+let linkedCoinsImagesPerItem = {};
+
+function getImagesPerCoin(node)
+{
+    const nodeID = node.dataset.coinId;
+
+    if (node.querySelector(".images-count"))
+    {
+        const imagesQnty = node.querySelector(".images-count").children.length;
+        linkedCoinsImagesPerItem[nodeID] = {images: imagesQnty};
+    }
+}
+
 function coinPreviewHandler(event)
 {
     const coinPreviewWrapper = event.currentTarget;
-
-    const imagesQuantity = coinPreviewWrapper.children.length;
+    const coinID = coinPreviewWrapper.closest('.linked-coins__coin-item').dataset.coinId;
+    
+    const imagesQuantity = linkedCoinsImagesPerItem[coinID].images;
     const wrapperWidth = coinPreviewWrapper.clientWidth;
 
+    // ширина одной части для показа изображения
     const step = wrapperWidth / imagesQuantity;
+
 
     const wrapperRect = coinPreviewWrapper.getBoundingClientRect();
 
     const userPointerPosition = event.clientX - wrapperRect.left;
     console.log(userPointerPosition);
 
-    const ff = step * userPointerPosition;
+    let imageNum = parseInt(Math.abs(userPointerPosition/step).toFixed());
 
-    console.log(ff);
+    coinPreviewWrapper.querySelector('img.active').classList.remove("active");
+
+    // console.log("itemNum old", imageNum);
+    // console.log("images skolko", imagesQuantity);
+
+    if (imageNum > imagesQuantity-1)
+    {
+        imageNum = imageNum - 1;
+    }
+
+    console.log("image", imageNum);
+
+    coinPreviewWrapper.querySelector(`img:nth-child(${imageNum+1})`).classList.add('active');
+
+    // const ff = step * userPointerPosition;
+
+    // console.log(ff);
 
     // console.log(imagesQuantity);
 }
@@ -60,6 +92,20 @@ document.addEventListener("DOMContentLoaded", e => {
         }
     });
 
-    document.querySelectorAll('.linked-coins__coin-item .coin-item__images-preview')
-        .forEach(wrapper => wrapper.addEventListener('mousemove', coinPreviewHandler))
+    document.querySelectorAll(".linked-coins__coin-item").forEach(coinItem => getImagesPerCoin(coinItem));
+
+    console.log(linkedCoinsImagesPerItem);
+
+    document.querySelectorAll(".linked-coins__coin-item").forEach(coinItem => {
+        const coinItemID = coinItem.dataset.coinId;
+
+        for(coinNode in linkedCoinsImagesPerItem)
+        {
+            if (coinNode === coinItemID)
+            {
+                coinItem.querySelector(".coin-item__images-preview").addEventListener('mousemove', coinPreviewHandler);
+                break;
+            }
+        }
+    })
 })
