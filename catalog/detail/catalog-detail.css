@@ -101,6 +101,7 @@ main
     margin-right: 16px;
 }
 
+#add-to-likes svg path,
 #share svg path
 {
     fill: #777777;
@@ -109,28 +110,11 @@ main
 }
 @media screen and (min-width: 769px) 
 {
-    #share:hover svg path
+    #share:hover svg path,
+    #add-to-likes:hover svg path
     {
         fill: var(--gold-color);
     }  
-}
-
-#add-to-likes svg path
-{
-    fill: #777777;
-
-    transition: fill .3s;
-}
-@media screen and (min-width: 769px) 
-{
-    #add-to-likes svg path
-    {
-        fill: var(--gold-color);
-    }  
-}
-#add-to-likes.liked svg path
-{
-    fill: var(--gold-color);
 }
 
 .coin-detail-info
