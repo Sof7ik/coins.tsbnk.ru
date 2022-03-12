@@ -135,6 +135,8 @@
     border-radius: 4px;
 
     padding: 9px 20px; 
+    min-width: 204px;
+
     color: #000;
 
     outline: none;
@@ -560,12 +562,21 @@
     border-radius: 10px;
 
     padding: 12px 20px 21px 20px;
+
+    transition: box-shadow .4s;
 }
 @media screen and (max-width: 567px) 
 {
     .catalog-coins__coin-item
     {
         padding: 11px 10px 14px 20px;
+    }
+}
+@media screen and (min-width: 769px)
+{
+    .catalog-coins__coin-item:hover
+    {
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -631,6 +642,19 @@
     color: var(--gold-color);
     border-color: var(--gold-color);
 }
+
+.add-to-liked
+{
+    transition: transform .4s;
+}
+@media screen and (min-width: 769px)
+{
+    .add-to-liked:hover
+    {
+        transform: scale(1.2);
+    }
+}
+    
 
 /* list coins */
 .catalog-coins-items.list .mobile-needed-wrapper
@@ -988,10 +1012,19 @@
     border-radius: 50%;
 
     padding: 11px 12px 9px 10px;
+
+    transition: transform .4s;
 }
 .add-to-cart.notify
 {
     padding: 10px;
+}
+@media screen and (min-width: 769px)
+{
+    .add-to-cart:hover
+    {
+        transform: scale(1.1);
+    }
 }
 
 /* list coins */
