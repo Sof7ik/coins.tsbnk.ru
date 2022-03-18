@@ -1,54 +1,55 @@
 let linkedCoinsImagesPerItem = {};
 
-function getImagesPerCoin(node)
-{
+function getImagesPerCoin(node) {
     const nodeID = node.dataset.coinId;
 
-    if (node.querySelector(".images-count"))
-    {
+    if (node.querySelector(".images-count")) {
         const imagesQnty = node.querySelector(".images-count").children.length;
-        linkedCoinsImagesPerItem[nodeID] = {images: imagesQnty};
+        linkedCoinsImagesPerItem[nodeID] = { images: imagesQnty };
     }
 }
 
-function coinPreviewHandler(event)
-{
+function coinPreviewHandler(event) {
     const coinPreviewWrapper = event.currentTarget;
     const coinID = coinPreviewWrapper.closest('.linked-coins__coin-item').dataset.coinId;
-    
+
     const imagesQuantity = linkedCoinsImagesPerItem[coinID].images;
     const wrapperWidth = coinPreviewWrapper.clientWidth;
 
     // ширина одной части для показа изображения
     const step = wrapperWidth / imagesQuantity;
 
-
     const wrapperRect = coinPreviewWrapper.getBoundingClientRect();
 
     const userPointerPosition = event.clientX - wrapperRect.left;
-    console.log(userPointerPosition);
+    // console.log(userPointerPosition);
 
-    let imageNum = parseInt(Math.abs(userPointerPosition/step).toFixed());
-
-    coinPreviewWrapper.querySelector('img.active').classList.remove("active");
+    let imageNum = parseInt(Math.abs((userPointerPosition / step)).toFixed());
 
     // console.log("itemNum old", imageNum);
     // console.log("images skolko", imagesQuantity);
+    // console.log("_______________________________________________");
 
-    if (imageNum > imagesQuantity-1)
-    {
+    if (imageNum > imagesQuantity - 1) {
         imageNum = imageNum - 1;
     }
 
-    console.log("image", imageNum);
+    // console.log("image", imageNum);
 
-    coinPreviewWrapper.querySelector(`img:nth-child(${imageNum+1})`).classList.add('active');
+    if (!coinPreviewWrapper.querySelector(`img:nth-child(${imageNum + 1})`).classList.contains("active")) {
+        // hide image
+        coinPreviewWrapper.querySelector('img.active').classList.remove("active");
 
-    // const ff = step * userPointerPosition;
+        // deactive thumb
+        coinPreviewWrapper.closest(".linked-coins__coin-item")
+            .querySelector('.images-count__position.active').classList.remove("active");
 
-    // console.log(ff);
+        coinPreviewWrapper.querySelector(`img:nth-child(${imageNum + 1})`).classList.add('active');
 
-    // console.log(imagesQuantity);
+        // active thumb
+        coinPreviewWrapper.closest(".linked-coins__coin-item")
+            .querySelector(`.images-count__position:nth-child(${imageNum + 1})`).classList.add("active");
+    }
 }
 
 
@@ -94,15 +95,13 @@ document.addEventListener("DOMContentLoaded", e => {
 
     document.querySelectorAll(".linked-coins__coin-item").forEach(coinItem => getImagesPerCoin(coinItem));
 
-    console.log(linkedCoinsImagesPerItem);
+    // console.log(linkedCoinsImagesPerItem);
 
     document.querySelectorAll(".linked-coins__coin-item").forEach(coinItem => {
         const coinItemID = coinItem.dataset.coinId;
 
-        for(coinNode in linkedCoinsImagesPerItem)
-        {
-            if (coinNode === coinItemID)
-            {
+        for (coinNode in linkedCoinsImagesPerItem) {
+            if (coinNode === coinItemID) {
                 coinItem.querySelector(".coin-item__images-preview").addEventListener('mousemove', coinPreviewHandler);
                 break;
             }

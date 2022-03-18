@@ -212,16 +212,19 @@
                                 <?foreach($coin["images"] as $keyImage => $image){?>
                                     <img 
                                         src="<?=$image?>" alt="золотая монета" 
-                                        <?= $keyImage ==0 ? "class='active'" : ""?>>
+                                        <?= $keyImage == 0 ? "class='active'" : ""?>>
                                 <?}?>
                             </div>
 
-                            <div class="images-count">
-                                <?foreach($coin["images"] as $imageInd => $image)
-                                {?>
-                                    <div class="images-count__position <?=$imageInd==0?'active':''?>"></div>
-                                <?}?>
-                            </div>
+                            <?if(count($coin["images"]) > 1)
+                            {?>
+                                <div class="images-count">
+                                    <?foreach($coin["images"] as $imageInd => $image)
+                                    {?>
+                                        <div class="images-count__position <?=$imageInd==0?'active':''?>"></div>
+                                    <?}?>
+                                </div>
+                            <?}?>
 
                             <?if ($coin["is_in_stock"] == "Y")
                             {?>
@@ -272,150 +275,6 @@
                     </div>
                 </a>
             <?}?>
-
-            <a class="swiper-slide linked-coins__coin-item" href="catalog/detail/catalog-detail.php">
-                <div class="top-bar">
-                    <button class="add-to-liked">
-                        <img src="/images/icons/linked-coins/heart-gold-filled.svg" alt="золотое сердечко залитое">
-                    </button>
-                </div>
-
-                <div class="mobile-needed-wrapper">
-                    <div class="mobile-preview-wrapper">
-                        <div class="coin-item__images-preview">
-                            <img src="/images/coins/coin-1.png" alt="золотая монета">
-                        </div>
-
-                        <p class="coin-item__is-in-stock">Нет в наличии</p>
-                    </div>
-
-                    <div class="coin-item__description-wrapper">
-                        <p class="coin-item__created-in">Соединённые штаты</p>
-
-                        <p class="coin-item__name">Золотая монета Год Быка 2009 7,78 гр 9999 проба Австралия 25 долларов простая 25 рублей 2021 вес 50 гр.</p>
-
-                        <p class="buy-price">Цена выкупа 158 000 &#8381;</p>
-
-                        <div class="bottom-bar no-cost">
-                            <div class="sell-price-wrapper">
-                                <p class="coin-item__sell-price">Нет в наличии</p>
-                            </div>
-
-                            <button class="add-to-cart notify">
-                                <img src="/images/icons/linked-coins/bell.svg" alt="звонок">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a class="swiper-slide linked-coins__coin-item dark" href="catalog/detail/catalog-detail.php">
-                <div class="top-bar">
-                    <button class="add-to-liked">
-                        <img src="/images/icons/linked-coins/heart-gold-filled.svg" alt="золотое сердечко залитое">
-                    </button>
-                </div>
-
-                <div class="mobile-needed-wrapper">
-                    <div class="mobile-preview-wrapper">
-                        <div class="coin-item__images-preview">
-                            <img src="/images/coins/coin-1.png" alt="золотая монета">
-                        </div>
-
-                        <p class="coin-item__is-in-stock">Нет в наличии</p>
-                    </div>
-
-                    <div class="coin-item__description-wrapper">
-                        <p class="coin-item__created-in">Соединённые штаты</p>
-
-                        <p class="coin-item__name">Золотая монета Год Быка 2009 7,78 гр 9999 проба Австралия 25 долларов простая 25 рублей 2021 вес 50 гр.</p>
-
-                        <p class="buy-price">Цена выкупа 158 000 &#8381;</p>
-
-                        <div class="bottom-bar no-cost">
-                            <div class="sell-price-wrapper">
-                                <p class="coin-item__sell-price">Нет в наличии</p>
-                            </div>
-
-                            <button class="add-to-cart notify">
-                                <img src="/images/icons/linked-coins/bell.svg" alt="звонок">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a class="swiper-slide linked-coins__coin-item" href="catalog/detail/catalog-detail.php">
-                <div class="top-bar">
-                    <button class="add-to-liked">
-                        <img src="/images/icons/linked-coins/heart-gold-filled.svg" alt="золотое сердечко залитое">
-                    </button>
-                </div>
-
-                <div class="mobile-needed-wrapper">
-                    <div class="mobile-preview-wrapper">
-                        <div class="coin-item__images-preview">
-                            <img src="/images/coins/coin-1.png" alt="золотая монета">
-                        </div>
-
-                        <p class="coin-item__is-in-stock">Нет в наличии</p>
-                    </div>
-
-                    <div class="coin-item__description-wrapper">
-                        <p class="coin-item__created-in">Соединённые штаты</p>
-
-                        <p class="coin-item__name">Золотая монета Год Быка 2009 7,78 гр 9999 проба Австралия 25 долларов простая 25 рублей 2021 вес 50 гр.</p>
-
-                        <p class="buy-price">Цена выкупа 158 000 &#8381;</p>
-
-                        <div class="bottom-bar no-cost">
-                            <div class="sell-price-wrapper">
-                                <p class="coin-item__sell-price">Нет в наличии</p>
-                            </div>
-
-                            <button class="add-to-cart notify">
-                                <img src="/images/icons/linked-coins/bell.svg" alt="звонок">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a class="swiper-slide linked-coins__coin-item dark" href="catalog/detail/catalog-detail.php">
-                <div class="top-bar">
-                    <button class="add-to-liked">
-                        <img src="/images/icons/linked-coins/heart-gold-filled.svg" alt="золотое сердечко залитое">
-                    </button>
-                </div>
-
-                <div class="mobile-needed-wrapper">
-                    <div class="mobile-preview-wrapper">
-                        <div class="coin-item__images-preview">
-                            <img src="/images/coins/coin-1.png" alt="золотая монета">
-                        </div>
-
-                        <p class="coin-item__is-in-stock">Нет в наличии</p>
-                    </div>
-
-                    <div class="coin-item__description-wrapper">
-                        <p class="coin-item__created-in">Соединённые штаты</p>
-
-                        <p class="coin-item__name">Золотая монета Год Быка 2009 7,78 гр 9999 проба Австралия 25 долларов простая 25 рублей 2021 вес 50 гр.</p>
-
-                        <p class="buy-price">Цена выкупа 158 000 &#8381;</p>
-
-                        <div class="bottom-bar no-cost">
-                            <div class="sell-price-wrapper">
-                                <p class="coin-item__sell-price">Нет в наличии</p>
-                            </div>
-
-                            <button class="add-to-cart notify">
-                                <img src="/images/icons/linked-coins/bell.svg" alt="звонок">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </a>
         </div>
 
         <div class="linked-coins-slider__navigation">
