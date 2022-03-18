@@ -48,28 +48,30 @@
                 <div class="header-right-container">
                     <div class="shop-burger-menu-wrapper">
                         <button class="open-shop-menu desktop-button">
-                            <span class="open-shop-menu__line"></span>
-                            <span class="open-shop-menu__line"></span>
-                            <span class="open-shop-menu__line"></span>
-                        </button>
+                            <span class="open-shop-menu__lines-wrapper">
+                                <span class="open-shop-menu__line"></span>
+                                <span class="open-shop-menu__line"></span>
+                                <span class="open-shop-menu__line"></span>
+                            </span>
 
-                        <p class="shop-burger-menu__title">Магазин</p>
+                            <span class="shop-burger-menu__title">Магазин</span>
+                        </button>
                     </div>
 
                     <nav class="header-navigation sticky-header-menu">
-                        <a href="" class="header-navigation__link">Скидки</a>
-                        <a href="" class="header-navigation__link">Новинки</a>
-                        <a href="" class="header-navigation__link">Золото</a>
-                        <a href="" class="header-navigation__link">Иностранные</a>
-                        <a href="" class="header-navigation__link">Российские</a>
-                        <a href="" class="header-navigation__link">Инвестиционные</a>
-                        <a href="" class="header-navigation__link">Юбилейные</a>
+                        <a href="/catalog/catalog.php" class="header-navigation__link">Скидки</a>
+                        <a href="/catalog/catalog.php" class="header-navigation__link">Новинки</a>
+                        <a href="/catalog/catalog.php" class="header-navigation__link">Золото</a>
+                        <a href="/catalog/catalog.php" class="header-navigation__link">Иностранные</a>
+                        <a href="/catalog/catalog.php" class="header-navigation__link">Российские</a>
+                        <a href="/catalog/catalog.php" class="header-navigation__link">Инвестиционные</a>
+                        <a href="/catalog/catalog.php" class="header-navigation__link">Юбилейные</a>
                     </nav>
 
                     <div class="header-search-sticky-bg"></div>
 
                     <form class="header-search-wrapper">
-                        <button class="search-loupe-wrapper input-left link-to-all-results">
+                        <button class="search-loupe-wrapper input-left">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_225_22664)">
@@ -87,8 +89,7 @@
                         <input type="text" id="header-search-input">
 
                         <div class="input-controls">
-                            <a href="/all-search-results/?query="
-                                class="search-loupe-wrapper input-right link-to-all-results">
+                            <button type="submit" class="search-loupe-wrapper input-right">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_225_22664)">
@@ -101,7 +102,7 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                            </a>
+                            </button>
 
                             <button id="close-input">
                                 <svg class="search-close-gold" width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -180,7 +181,6 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
                     </a>
                 </div>
             </div>
@@ -191,13 +191,13 @@
                 <div class="header-right-container">
                     <div class="header-bottom-navigation">
                         <nav class="header-navigation">
-                            <a href="" class="header-navigation__link">Скидки</a>
-                            <a href="" class="header-navigation__link">Новинки</a>
-                            <a href="" class="header-navigation__link">Золото</a>
-                            <a href="" class="header-navigation__link">Иностранные</a>
-                            <a href="" class="header-navigation__link">Российские</a>
-                            <a href="" class="header-navigation__link">Инвестиционные</a>
-                            <a href="" class="header-navigation__link">Юбилейные</a>
+                            <a href="/catalog/catalog.php" class="header-navigation__link">Скидки</a>
+                            <a href="/catalog/catalog.php" class="header-navigation__link">Новинки</a>
+                            <a href="/catalog/catalog.php" class="header-navigation__link">Золото</a>
+                            <a href="/catalog/catalog.php" class="header-navigation__link">Иностранные</a>
+                            <a href="/catalog/catalog.php" class="header-navigation__link">Российские</a>
+                            <a href="/catalog/catalog.php" class="header-navigation__link">Инвестиционные</a>
+                            <a href="/catalog/catalog.php" class="header-navigation__link">Юбилейные</a>
                         </nav>
 
                         <a href="tel:+7">8 800 505 04 76</a>
@@ -237,18 +237,26 @@
                     </div>
 
                     <div class="shop-menu-wrapper hidden">
-                        <nav class="shop-menu-navigation">
-                            <a href="/about-company/about-company.php" class="shop-menu-navigation__link">О магазине</a>
-                            <a href="/all-news/index.php" class="shop-menu-navigation__link">Новости</a>
-                            <a href="/encyclopedia/encyclopedia.php" class="shop-menu-navigation__link">Энциклопедия</a>
-                            <a href="/all-collections/all-collections.php"
-                                class="shop-menu-navigation__link">Коллекции</a>
-                            <a href="/delivery/delivery.php" class="shop-menu-navigation__link">Доставка и оплата</a>
-                            <a href="/sell-rules/sell-rules.php" class="shop-menu-navigation__link">Правила продажи</a>
-                            <a href="/contacts/contacts.php" class="shop-menu-navigation__link">Контакты</a>
-                        </nav>
+                        <div class="content-container">
+                            <div class="header-right-container">
+                                <nav class="shop-menu-navigation">
+                                    <a href="/about-company/about-company.php" class="shop-menu-navigation__link">О
+                                        магазине</a>
+                                    <a href="/all-news/index.php" class="shop-menu-navigation__link">Новости</a>
+                                    <a href="/encyclopedia/encyclopedia.php"
+                                        class="shop-menu-navigation__link">Энциклопедия</a>
+                                    <a href="/all-collections/all-collections.php"
+                                        class="shop-menu-navigation__link">Коллекции</a>
+                                    <a href="/delivery/delivery.php" class="shop-menu-navigation__link">Доставка и
+                                        оплата</a>
+                                    <a href="/sell-rules/sell-rules.php" class="shop-menu-navigation__link">Правила
+                                        продажи</a>
+                                    <a href="/contacts/contacts.php" class="shop-menu-navigation__link">Контакты</a>
+                                </nav>
 
-                        <div class="shop-menu-background"></div>
+                                <div class="shop-menu-background"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
